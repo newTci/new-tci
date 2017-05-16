@@ -18,6 +18,7 @@ $font-divider = 20px
 $montserrat = 'Montserrat', sans-serif
 $roboto = 'Roboto', sans-serif
 $font-thumbnail = 26px
+$font-slider = 38px
 // /variable
 
 h1
@@ -120,6 +121,7 @@ h1
 				-o-transition: all .25s ease
 				transition: all .25s ease
 				font-family "Roboto"
+				font-weight bold
 	.banner-center
 		margin-top 10px
 		img
@@ -181,3 +183,33 @@ h1
 	-o-transition: all .25s ease
 	transition: all .25s ease
 	font-weight bold
+	
+.wrapper-relative
+	position relative
+	span
+		position absolute
+		left 20px
+		bottom 0
+		font-family $roboto
+		font-size $font-slider
+		color white
+		font-weight bold
+.carousel
+	img
+		width 100%
+		
+
+#loker-sub-menu
+	height auto
+	margin 15px 0
+	.col-md-4
+		padding 0 5px
+		&:first-child
+			padding-left 0
+		&:last-child
+			padding-right 0
+	.wrapper-thumbnail-3
+		width 100%
+		img
+			width 100%
+			min-height 153px

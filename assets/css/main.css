@@ -126,6 +126,7 @@ h1 {
   -o-transition: all 0.25s ease;
   transition: all 0.25s ease;
   font-family: "Roboto";
+  font-weight: bold;
 }
 .wrapper-center .banner-center {
   margin-top: 10px;
@@ -194,4 +195,39 @@ h1 {
   -o-transition: all 0.25s ease;
   transition: all 0.25s ease;
   font-weight: bold;
+}
+.wrapper-relative {
+  position: relative;
+}
+.wrapper-relative span {
+  position: absolute;
+  left: 20px;
+  bottom: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 38px;
+  color: #fff;
+  font-weight: bold;
+}
+.carousel img {
+  width: 100%;
+}
+#loker-sub-menu {
+  height: auto;
+  margin: 15px 0;
+}
+#loker-sub-menu .col-md-4 {
+  padding: 0 5px;
+}
+#loker-sub-menu .col-md-4:first-child {
+  padding-left: 0;
+}
+#loker-sub-menu .col-md-4:last-child {
+  padding-right: 0;
+}
+#loker-sub-menu .wrapper-thumbnail-3 {
+  width: 100%;
+}
+#loker-sub-menu .wrapper-thumbnail-3 img {
+  width: 100%;
+  min-height: 153px;
 }

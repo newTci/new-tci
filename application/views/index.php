@@ -34,7 +34,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							</div>
 						</div>
 						<div class="banner-center">
-							<img class="" src="<?php echo base_url(); ?>assets/gambar/serv/banner-horizontal.jpg">
+							<a href="#">
+								<img class="" src="<?php echo base_url(); ?>assets/gambar/serv/banner-horizontal.jpg">
+							</a>
 						</div>
 						<div class="first-wrapper row no-margin">
 							<div id="first-sub-left" class="col-sm-2 no-gutter">
@@ -49,10 +51,28 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								</div>
 							</div>
 							<div class="col-sm-8">
-								<a id="h-first-image" href="#">
-									<img id="first-img" src="<?php echo base_url(); ?>assets/gambar/serv/banner-tengah.jpg">
-									<span href="#">NASKAH</span>
-								</a>
+								<div id="myCarousel" class="carousel slide" data-ride="carousel">
+								 	<div class="carousel-inner">
+										<div class="item active">
+											<a href="#">
+												<img id="first-img" src="<?php echo base_url(); ?>assets/gambar/serv/banner-tengah.jpg">
+												<span href="#">NASKAH</span>
+											</a>
+										</div>
+										<div class="item">
+											<a href="#">
+												<img id="first-img" src="<?php echo base_url(); ?>assets/gambar/serv/banner-tengah.jpg">
+												<span href="#">VIDEO PODCAST</span>
+											</a>
+										</div>
+										<div class="item">
+											<a href="#">
+												<img id="first-img" src="<?php echo base_url(); ?>assets/gambar/serv/banner-tengah.jpg">
+												<span href="#">OPINI</span>
+											</a>
+										</div>
+									</div>
+								</div>
 							</div>
 							<div id="first-sub-right" class="col-sm-2 no-gutter">
 								<div class="wrapper-box">
@@ -113,12 +133,75 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					<!-- /berita -->
 
 					<!-- loker -->
-					<div class="big-divider">
-						<span class="text-divider">Loker</span>
-					</div>
-					
-					<div class="row no-margin">
+					<div id="loker">
+						<div class="big-divider">
+							<span class="text-divider">Loker</span>
+						</div>
+						
+						<div class="row no-margin">
+							<div class="col-sm-12 no-gutter">
+								<div id="carouselLoker" class="carousel slide" data-ride="carousel">
+								 	<div class="carousel-inner">
+										<div class="wrapper-relative item active">
+											<a href="#">
+												<img src="<?php echo base_url(); ?>assets/gambar/serv/jalan-jalan.jpg">
+												<span href="#">APAKAH ANDA MAU PROFSE SEPERTI INI ? TEMUKAN DISINI</span>
+											</a>
+										</div>
+										<div class="wrapper-relative item">
+											<a href="#">
+												<img src="<?php echo base_url(); ?>assets/gambar/serv/banner-tengah.jpg">
+												<span href="#">VIDEO PODCAST</span>
+											</a>
+										</div>
+										<div class="wrapper-relative item">
+											<a href="#">
+												<img src="<?php echo base_url(); ?>assets/gambar/serv/banner-tengah.jpg">
+												<span href="#">OPINI</span>
+											</a>
+										</div>
+									</div>
 
+									<a class="left carousel-control" href="#carouselLoker" data-slide="prev">
+										<span class="glyphicon glyphicon-chevron-left"></span>
+										<span class="sr-only">Previous</span>
+									</a>
+									<a class="right carousel-control" href="#carouselLoker" data-slide="next">
+										<span class="glyphicon glyphicon-chevron-right"></span>
+										<span class="sr-only">Next</span>
+									</a>
+								</div>
+							</div>
+							
+							<div id="loker-sub-menu" class="col-md-12 no-gutter">
+								<div class="col-md-4">
+									<div class="wrapper-relative wrapper-thumbnail-3">
+										<a href="#">
+											<img src="<?php echo base_url(); ?>assets/gambar/serv/banner-tengah.jpg">
+											<span href="#">OPINI</span>
+										</a>
+									</div>
+								</div>
+
+								<div class="col-md-4">
+									<div class="wrapper-relative wrapper-thumbnail-3">
+										<a href="#">
+											<img src="<?php echo base_url(); ?>assets/gambar/serv/banner-tengah.jpg">
+											<span href="#">OPINI</span>
+										</a>
+									</div>
+								</div>
+
+								<div class="col-md-4">
+									<div class="wrapper-relative wrapper-thumbnail-3">
+										<a href="#">
+											<img src="<?php echo base_url(); ?>assets/gambar/serv/banner-tengah.jpg">
+											<span href="#">OPINI</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 					<!-- /loker -->
 
@@ -137,7 +220,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<!-- javascript -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<script src="<?php echo base_url(); ?>assets/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-		<script src="<?php echo base_url(); ?>assets/bower_components/owl.carousel/dist/owl.carousel.min.js"></script>
+		<script src="<?php echo base_url(); ?>assets/bower_components/owl.carousel/dist/owl.carousel.js"></script>
 		<script src="<?php echo base_url(); ?>assets/js/js.js"></script>
 	</body>
 </html>
