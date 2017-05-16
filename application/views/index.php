@@ -9,12 +9,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<title>Topcareer Indonesia</title>
 		<link href="<?php echo base_url(); ?>assets/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 		<link href="<?php echo base_url(); ?>assets/css/main.css" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu|Montserrat|Roboto" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/bower_components/owl.carousel/dist/assets/owl.carousel.min.css">
+		<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/bower_components/owl.carousel/dist/assets/owl.theme.default.min.css">
 	</head>
 	<body>
-		<div class="container-fluid">
+		<div class="container">
 			<div class="row">
-				<div class="col-sm-2 relative">
+				<div class="col-sm-2 col-lg-2 relative">
 					<div class="left-side-banner hidden-sm">
 						<a href="#">
 							<img src="<?php echo base_url(); ?>assets/gambar/serv/banner.jpg">
@@ -22,43 +24,104 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					</div>
 				</div>
 				<!-- Content Center -->
-				<div class="col-sm-8 no-gutter">
+				<div class="col-sm-8 no-gutter col-lg-8">
 					<div class="wrapper-center">
 						<div class="logo">
-							<img src="" alt="">
+							<img class="" src="<?php echo base_url(); ?>assets/gambar/serv/logo.png">
+							<div class="utility col-sm-offset-10 col-sm-2 no-gutter">
+								<a href="#"><span class="glyphicon glyphicon-user"></span></a>
+								<a href="#"><span class="glyphicon glyphicon-search"></span></a>
+							</div>
 						</div>
-						<div class="first-wrapper">
+						<div class="banner-center">
+							<img class="" src="<?php echo base_url(); ?>assets/gambar/serv/banner-horizontal.jpg">
+						</div>
+						<div class="first-wrapper row no-margin">
 							<div id="first-sub-left" class="col-sm-2 no-gutter">
 								<div class="wrapper-box">
-									<h3>TEST</h3>
+									<span class="hashtag">#ahok</span>
 								</div>
-
 								<div class="wrapper-box">
-									<h3>TEST</h3>
+									<span class="hashtag">#ahok</span>
 								</div>
-
 								<div class="wrapper-box">
-									<h3>TEST</h3>
+									<span class="hashtag">#ahok</span>
 								</div>
 							</div>
 							<div class="col-sm-8">
-								<img id="first-img" >
+								<a id="h-first-image" href="#">
+									<img id="first-img" src="<?php echo base_url(); ?>assets/gambar/serv/banner-tengah.jpg">
+									<span href="#">NASKAH</span>
+								</a>
 							</div>
 							<div id="first-sub-right" class="col-sm-2 no-gutter">
 								<div class="wrapper-box">
-									<h3>TEST</h3>
+									<span class="hashtag">#ahok</span>
 								</div>
-
 								<div class="wrapper-box">
-									<h3>TEST</h3>
+									<span class="hashtag">#ahok</span>
 								</div>
-
 								<div class="wrapper-box">
-									<h3>TEST</h3>
+									<span class="hashtag">#ahok</span>
 								</div>
 							</div>
 						</div>
 					</div>
+					
+					<!-- berita -->
+					<div class="big-divider">
+						<span class="text-divider">Berita</span>
+					</div>
+
+					<div id="menu-berita" class="row no-margin">
+						<div class="col-md-3">
+							<div class="wrapper-thumbnail-4">
+								<a href="#">
+									<img class="img-thumbnail-4" src="<?php echo base_url(); ?>assets/gambar/serv/banner-tengah.jpg">
+									<span class="thumbnail-4-text">Naskah</span>
+								</a>
+							</div>
+						</div>
+
+						<div class="col-md-3">
+							<div class="wrapper-thumbnail-4">
+								<a href="#">
+									<img class="img-thumbnail-4" src="<?php echo base_url(); ?>assets/gambar/serv/banner-tengah.jpg">
+									<span class="thumbnail-4-text">Video Podcast</span>
+								</a>
+							</div>
+						</div>
+
+						<div class="col-md-3">
+							<div class="wrapper-thumbnail-4">
+								<a href="#">
+									<img class="img-thumbnail-4" src="<?php echo base_url(); ?>assets/gambar/serv/banner-tengah.jpg">
+									<span class="thumbnail-4-text">Opini</span>
+								</a>
+							</div>
+						</div>
+
+						<div class="col-md-3">
+							<div class="wrapper-thumbnail-4">
+								<a href="#">
+									<img class="img-thumbnail-4" src="<?php echo base_url(); ?>assets/gambar/serv/banner-tengah.jpg">
+									<span class="thumbnail-4-text">EMAGAZINE</span>
+								</a>
+							</div>
+						</div>
+					</div>
+					<!-- /berita -->
+
+					<!-- loker -->
+					<div class="big-divider">
+						<span class="text-divider">Loker</span>
+					</div>
+					
+					<div class="row no-margin">
+
+					</div>
+					<!-- /loker -->
+
 				</div>
 				<!-- /Content Center -->
 				<div class="col-sm-2">
@@ -74,6 +137,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<!-- javascript -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<script src="<?php echo base_url(); ?>assets/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script src="<?php echo base_url(); ?>assets/bower_components/owl.carousel/dist/owl.carousel.min.js"></script>
 		<script src="<?php echo base_url(); ?>assets/js/js.js"></script>
 	</body>
 </html>
