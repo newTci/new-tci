@@ -10,4 +10,23 @@ $(document).ready(function() {
 	}, function() {
 		$(this).find('span').removeClass('hover-text-thumbnail')
 	});
-});/* Stuff to do when the mouse enters the element */
+
+	// // owl carousel
+ //  	var owl = $('.owl-carousel');
+	// owl.owlCarousel({
+	//     items:1,
+	//     loop:true,
+	//     margin:10,
+	//     autoplay:true,
+	//     autoplayTimeout:6000,
+	//     autoplayHoverPause:true
+	// });
+	$('#myCarousel').carousel({
+      interval: 5000
+    });
+
+    $('#carouselLoker').carousel({
+      interval: 5000
+    });
+
+});
