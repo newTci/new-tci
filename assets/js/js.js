@@ -29,4 +29,53 @@ $(document).ready(function() {
       interval: 5000
     });
 
+    $('#carouselJualBeli').carousel({
+      interval: 5000
+    });
+
+    //2246
+    var mq = window.matchMedia( "(max-width: 1200px)" );
+    console.log(mq)
+    var banner = $(".side-banner")
+    var leftBanner = $(".left-side-banner img")
+    var jualbeli = $("#jualbeli")
+
+    //console.log $(window).width()
+
+    if (mq.matches) {
+	   $(window).scroll(function (event) {
+	    var scroll = $(window).scrollTop();
+	    if (scroll > 1580){
+	    	banner.css({
+	    		position: 'relative',
+	    		top: '1677px'
+	    	});
+	    	console.log("ASD")
+	    }
+	    else{
+	    	banner.css({
+	    		position: 'fixed',
+	    		top: '110px'
+	    	});
+	    	leftBanner.css('margin-left', '-130px');
+	    }
+	});
+	} else {
+	$(window).scroll(function (event) {
+	    var scroll = $(window).scrollTop();
+	    if (scroll > 2485){
+	    	banner.css({
+	    		position: 'relative',
+	    		top: '2640px'
+	    	});
+	    }
+	    else{
+	    	banner.css({
+	    		position: 'fixed',
+	    		top: '150px'
+	    	});
+	    	leftBanner.css('margin-left', '-130px');
+	    }
+	});
+	}
 });
