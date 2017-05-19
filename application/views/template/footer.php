@@ -1,9 +1,5 @@
 				<div class="col-sm-2 col-lg-1">
-					<div class="right-side-banner hidden-sm">
-						<a href="#">
-							<img class="side-banner" src="<?php echo base_url(); ?>assets/gambar/serv/banner.jpg">
-						</a>
-					</div>
+					
 				</div>
 			</div>
 		</div>	
@@ -47,5 +43,6 @@
 		<script src="<?php echo base_url(); ?>assets/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 		<script src="<?php echo base_url(); ?>assets/bower_components/owl.carousel/dist/owl.carousel.js"></script>
 		<script src="<?php echo base_url(); ?>assets/js/js.js"></script>
+		<script src="<?php echo base_url(); ?>assets/js/sticky.js"></script>
 	</body>
 </html>

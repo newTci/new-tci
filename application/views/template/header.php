@@ -16,14 +16,36 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	</head>
 	<body>
 		<div id="utama" class="container">
+			<div class="left-side-banner hidden-sm">
+				<a href="#">
+					<img class="side-banner" src="<?php echo base_url(); ?>assets/gambar/serv/banner.jpg">
+				</a>
+			</div>
+			<div class="right-side-banner hidden-sm">
+				<a href="#">
+					<img class="side-banner" src="<?php echo base_url(); ?>assets/gambar/serv/banner.jpg">
+				</a>
+			</div>
 			<div class="background-container"></div>
 			<div class="row">
-				<div class="col-sm-2 col-lg-1 relative">
-					<div class="left-side-banner hidden-sm">
+				<div class="col-lg-offset-1 col-sm-offset-2 col-md-offset-2 col-sm-8 no-gutter col-lg-10">
+					<div class="logo">
+						<img class="" src="<?php echo base_url(); ?>assets/gambar/serv/logo.png">
+						<div class="utility col-sm-offset-10 col-sm-2 no-gutter">
+							<a href="#"><span class="glyphicon glyphicon-user"></span></a>
+							<a href="#"><span class="glyphicon glyphicon-search"></span></a>
+						</div>
+					</div>
+					<div class="banner-center">
 						<a href="#">
-							<img class="side-banner" src="<?php echo base_url(); ?>assets/gambar/serv/banner.jpg">
+							<img class="" src="<?php echo base_url(); ?>assets/gambar/serv/banner-horizontal.jpg">
 						</a>
 					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-2 col-lg-1 relative">
+					
 				</div>
 				
 				

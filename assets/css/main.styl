@@ -27,11 +27,11 @@ $font-slider = 38px
 	z-index 6
 
 .background-container
-	width 200%
+	width 500%
 	background-color white
 	position absolute
 	top 0
-	left -50%
+	left -100vh
 	z-index -3
 	min-height 100%
 	overflow hidden
@@ -40,21 +40,27 @@ h1
 	font-family "Ubuntu"
 	
 .left-side-banner
-	text-align right
-	height 700px
-	z-index 1
+	position fixed
+	top 160px
+	margin-left 1065px
+	-webkit-transition: all .25s ease
+	-moz-transition: all .25s ease
+	-ms-transition: all .25s ease
+	-o-transition: all .25s ease
+	transition: all .25s ease
 	img
-		position fixed 
 		width 130px
-		top 150px
-		margin-left -130px
 
 .right-side-banner
-	text-align left
-	min-height 700px
+	position fixed
+	top 160px
+	margin-left -60px
+	-webkit-transition: all .25s ease
+	-moz-transition: all .25s ease
+	-ms-transition: all .25s ease
+	-o-transition: all .25s ease
+	transition: all .25s ease
 	img
-		position fixed 
-		top 150px
 		width 130px
 	
 // center
@@ -136,11 +142,11 @@ h1
 			transition: all .25s ease
 			font-family "Roboto"
 			font-weight bold
-	.banner-center
-		margin-top 10px
-		img
-			width 100%
-			height auto
+.banner-center
+	margin-top 10px
+	img
+		width 100%
+		height auto
 
 .big-divider
 	background-color black
@@ -335,3 +341,10 @@ h1
 		height 123px
 	#interaksi-sub-menu .wrapper-thumbnail-3 img
 		height 123px
+	.left-side-banner
+		margin-left 810px
+		top 115px
+	.right-side-banner
+		margin-left 0
+		top 115px
+		

@@ -1,17 +1,6 @@
 <div class="col-sm-8 no-gutter col-lg-10">
 	<div id="first-section" class="wrapper-center">
-		<div class="logo">
-			<img class="" src="<?php echo base_url(); ?>assets/gambar/serv/logo.png">
-			<div class="utility col-sm-offset-10 col-sm-2 no-gutter">
-				<a href="#"><span class="glyphicon glyphicon-user"></span></a>
-				<a href="#"><span class="glyphicon glyphicon-search"></span></a>
-			</div>
-		</div>
-		<div class="banner-center">
-			<a href="#">
-				<img class="" src="<?php echo base_url(); ?>assets/gambar/serv/banner-horizontal.jpg">
-			</a>
-		</div>
+		
 		<div class="first-wrapper row no-margin">
 			<div id="first-sub-left" class="col-sm-2 no-gutter">
 				<div class="wrapper-box">

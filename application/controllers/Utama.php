@@ -18,7 +18,7 @@ class Utama extends CI_Controller {
 	public function berita()
 	{
 		$this->load->view('template/header');
-		$this->load->view('template/content');
+		$this->load->view('berita/index');
 		$this->load->view('template/footer');
 	}
 }
