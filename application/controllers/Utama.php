@@ -10,11 +10,15 @@ class Utama extends CI_Controller {
 
 	public function index()
 	{
+		$this->load->view('template/header');
 		$this->load->view('index');
+		$this->load->view('template/footer');
 	}
 
 	public function berita()
 	{
 		$this->load->view('template/header');
+		$this->load->view('template/content');
+		$this->load->view('template/footer');
 	}
 }

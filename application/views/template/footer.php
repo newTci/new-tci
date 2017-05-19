@@ -1,4 +1,4 @@
-<div class="col-sm-2 col-lg-1">
+				<div class="col-sm-2 col-lg-1">
 					<div class="right-side-banner hidden-sm">
 						<a href="#">
 							<img class="side-banner" src="<?php echo base_url(); ?>assets/gambar/serv/banner.jpg">
@@ -7,6 +7,7 @@
 				</div>
 			</div>
 		</div>	
+		
 		<!-- footer -->
 		<div id="footer-container" class="container-fluid">
 			<div id="footer" class="row">

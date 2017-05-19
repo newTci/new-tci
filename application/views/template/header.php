@@ -25,10 +25,5 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						</a>
 					</div>
 				</div>
-				<!-- Content Center -->
-				<div class="col-sm-8 no-gutter col-lg-10">
-					
-					
-				</div>
-				<!-- /Content Center -->
+				
 				
