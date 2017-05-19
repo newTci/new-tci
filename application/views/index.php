@@ -59,7 +59,7 @@
 	<div id="menu-berita" class="row no-margin">
 		<div class="col-md-3">
 			<div class="wrapper-thumbnail-4">
-				<a href="#">
+				<a href="<?php echo base_url(); ?>berita">
 					<img class="img-thumbnail-4" src="<?php echo base_url(); ?>assets/gambar/serv/banner-tengah.jpg">
 					<span class="thumbnail-4-text">Naskah</span>
 				</a>

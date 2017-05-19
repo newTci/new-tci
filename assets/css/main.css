@@ -158,7 +158,7 @@ h1 {
   background-color: #000;
   width: 100%;
   position: relative;
-  height: 35px;
+  height: 45px;
   margin-bottom: 10px;
 }
 .text-divider {
@@ -356,6 +356,74 @@ h1 {
   display: inline-block;
   width: 20px;
 }
+.wrapper-berita {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #2c3e50;
+}
+.title-berita {
+  font-size: 22px;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 0 25px;
+}
+.konten-berita {
+  display: block;
+  font-size: 20px;
+  text-decoration: none;
+  color: #2c3e50;
+}
+.konten-berita:hover {
+  text-decoration: none;
+  color: #2c3e50;
+  -webkit-transform: scale();
+  -ms-transform: scale();
+  transform: scale();
+}
+.paging-berita {
+  font-size: 14px;
+  color: #2c3e50;
+}
+.divider-konten {
+  height: 25px;
+}
+.wrapper-naskah {
+  background-color: #ffc0cb;
+}
+.judul-naskah {
+  font-size: 26px;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.wrapper-share {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+}
+.share-detail {
+  text-decoration: none;
+  color: #2c3e50;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  display: inline-block;
+}
+.share-detail:hover {
+  text-decoration: none;
+  color: #2c3e50;
+}
 @media (max-width: 1200px) {
   .wrapper-box {
     height: 67px;
@@ -369,8 +437,21 @@ h1 {
   #utama {
     margin-bottom: 330px;
   }
-  .left-side-banner img {
+  .left-side-banner {
     top: 110px;
+    width: 100px;
+    margin-left: 810px;
+  }
+  .left-side-banner img {
+    width: 100%;
+  }
+  .right-side-banner {
+    margin-left: 30px;
+    top: 110px;
+    width: 100px;
+  }
+  .right-side-banner img {
+    width: 100%;
   }
   .wrapper-relative span {
     font-size: 24px;
@@ -384,12 +465,22 @@ h1 {
   #interaksi-sub-menu .wrapper-thumbnail-3 img {
     height: 123px;
   }
-  .left-side-banner {
-    margin-left: 810px;
-    top: 115px;
+  .wrapper-berita {
+    margin-bottom: 25px;
   }
+  .divider-konten {
+    height: 0;
+  }
+}
+@media (max-width: 990px) {
   .right-side-banner {
-    margin-left: 0;
-    top: 115px;
+    margin-left: 5px;
+    top: 85px;
+    width: 90px;
+  }
+  .left-side-banner {
+    top: 85px;
+    width: 90px;
+    margin-left: 620px;
   }
 }

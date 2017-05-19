@@ -45,7 +45,7 @@ $(document).ready(function() {
 
     //console.log $(window).width()
     $(".left-side-banner, .right-side-banner").stick_in_parent();
- //    if (mq.matches) {
+ 	//    if (mq.matches) {
 	//    $(window).scroll(function (event) {
 	//     var scroll = $(window).scrollTop();
 	//     if (scroll > 1580){

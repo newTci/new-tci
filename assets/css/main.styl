@@ -19,6 +19,8 @@ $montserrat = 'Montserrat', sans-serif
 $roboto = 'Roboto', sans-serif
 $font-thumbnail = 26px
 $font-slider = 38px
+$judul-naskah = 26px
+$title-berita = 22px
 // /variable
 
 #utama
@@ -152,7 +154,7 @@ h1
 	background-color black
 	width 100%
 	position relative
-	height 35px
+	height 45px
 	margin-bottom 10px
 
 .text-divider
@@ -317,10 +319,65 @@ h1
 			display inline-block
 			width 20px
 			
+// section berita
+.wrapper-berita
+	width 100%
+	padding 10px
+	border 2px solid $hitam-dope
+	
+.title-berita
+	font-size $title-berita
+	font-weight bold
+	font-family $roboto
+	text-align center
+	text-transform uppercase
+	margin 0 0 25px
+	
+.konten-berita
+	display block
+	font-size $font-divider
+	text-decoration none
+	color $hitam-dope
+	&:hover
+		text-decoration none
+		color $hitam-dope
+		transform scale()
+.paging-berita
+	font-size $font-divider - 6
+	color $hitam-dope
+	
+.divider-konten
+	height 25px
+	
+// section detail-berita
+.wrapper-naskah
+	background-color pink
+.judul-naskah
+	font-size $judul-naskah
+	font-family $roboto
+	margin 0
+	font-weight bold
+	margin-bottom 15px
+.wrapper-share
+	display flex
+	flex-direction column
+	flex-wrap wrap
+	align-content stretch
+.share-detail
+	text-decoration none
+	color $hitam-dope
+	font-family $roboto
+	font-size $font-divider
+	display inline-block
+	&:hover
+		text-decoration none
+		color $hitam-dope
 // @keyframes {asd}
 // 	0%
 // 		display flex
 
+
+// media query 1200px / md
 @media (max-width: 1200px)
 	.wrapper-box
 		height 67px
@@ -331,8 +388,17 @@ h1
 	#utama
 		margin-bottom 330px
 	.left-side-banner
+		top 110px
+		width 100px
+		margin-left 810px
 		img
-			top 110px
+			width 100%
+	.right-side-banner
+		margin-left 30px
+		top 110px
+		width 100px
+		img
+			width 100%
 	.wrapper-relative span
 		font-size 24px
 	#loker-sub-menu .wrapper-thumbnail-3 img
@@ -341,10 +407,19 @@ h1
 		height 123px
 	#interaksi-sub-menu .wrapper-thumbnail-3 img
 		height 123px
-	.left-side-banner
-		margin-left 810px
-		top 115px
+	.wrapper-berita
+		margin-bottom 25px
+	.divider-konten
+		height 0
+
+
+// media query 900px /sm
+@media (max-width: 990px)
 	.right-side-banner
-		margin-left 0
-		top 115px
-		
+		margin-left 5px
+		top 85px
+		width 90px
+	.left-side-banner
+		top 85px
+		width 90px
+		margin-left 620px

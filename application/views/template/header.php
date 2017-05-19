@@ -16,12 +16,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	</head>
 	<body>
 		<div id="utama" class="container">
-			<div class="left-side-banner hidden-sm">
+			<div class="left-side-banner">
 				<a href="#">
 					<img class="side-banner" src="<?php echo base_url(); ?>assets/gambar/serv/banner.jpg">
 				</a>
 			</div>
-			<div class="right-side-banner hidden-sm">
+			<div class="right-side-banner">
 				<a href="#">
 					<img class="side-banner" src="<?php echo base_url(); ?>assets/gambar/serv/banner.jpg">
 				</a>
@@ -31,7 +31,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<div class="col-lg-offset-1 col-sm-offset-2 col-md-offset-2 col-sm-8 no-gutter col-lg-10">
 					<div class="logo">
 						<img class="" src="<?php echo base_url(); ?>assets/gambar/serv/logo.png">
-						<div class="utility col-sm-offset-10 col-sm-2 no-gutter">
+						<div class="utility col-sm-offset-9 col-sm-3 no-gutter">
 							<a href="#"><span class="glyphicon glyphicon-user"></span></a>
 							<a href="#"><span class="glyphicon glyphicon-search"></span></a>
 						</div>
