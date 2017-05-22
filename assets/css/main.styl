@@ -4,6 +4,10 @@
 	padding 0
 .no-margin
 	margin 0
+.no-gutter-right
+	padding-right 0
+.no-gutter-left
+	padding-left 0
 .flex-row
 	display flex
 	flex-direction row
@@ -282,7 +286,6 @@ h1
 	overflow hidden
 	position fixed
 	bottom 0
-	z-index 1
 
 #footer
 	padding 20px
@@ -355,7 +358,7 @@ h1
 // section kategori berita
 .wrapper-box-naskah
 	border-bottom 2px solid $hitam-dope
-	margin 20px 0
+	margin 15px 0
 	&:last-child
 		border-bottom none
 .tentang-wrapper
@@ -396,7 +399,7 @@ h1
 	text-align justify  
 	/* place for '...' */
 	margin-right -1em
-	padding-right 1em
+	padding-right 2em
 	font-family $montserrat
 	
 	&:before
@@ -405,7 +408,7 @@ h1
 		/* absolute position */
 		position absolute
 		/* set position to right bottom corner of block */
-		right 0
+		right 1.3em
 		bottom 0
 
 	&:after
@@ -414,7 +417,7 @@ h1
 		/* absolute position */
 		position: absolute;
 		/* set position to right bottom corner of text */
-		right: 0;
+		right: 1.3em;
 		/* set width and height */
 		width: 1em;
 		height: 1em;
@@ -422,8 +425,6 @@ h1
 		/* bg color = bg color under block */
 		background: white;
 // section detail-berita
-.wrapper-naskah
-	background-color pink
 .judul-naskah
 	font-size $judul-naskah
 	font-family $roboto
@@ -444,6 +445,48 @@ h1
 	&:hover
 		text-decoration none
 		color $hitam-dope
+.share-flex
+	display flex
+	flex-direction row
+	flex-wrap nowrap
+	justify-content space-between
+	max-width 270px
+.icon-share
+	width 50px
+.wrapper-content-naskah
+	padding 20px 0
+	p
+		font-family $roboto
+.wrapper-comment
+	background-color #ddd
+	padding 10px
+	display flex
+	flex-direction column
+	flex-wrap wrap
+.wrapper-isi-comment
+	background-color black
+	display flex
+	flex-direction row
+	flex-wrap wrap
+	justify-content space-around
+	padding 10px 0
+	position relative
+.icon-user
+	height 40px
+.btn-post
+	margin-left auto
+	margin-right 5px
+	&:before
+		content '500'
+		position absolute
+		background-color transparent
+		color white
+		right 65px
+		bottom 15px
+.people-comment
+	margin 15px 0
+	min-height 100px
+	background-color white
 // @keyframes {asd}
 // 	0%
 // 		display flex

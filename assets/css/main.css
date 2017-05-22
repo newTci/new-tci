@@ -4,6 +4,12 @@
 .no-margin {
   margin: 0;
 }
+.no-gutter-right {
+  padding-right: 0;
+}
+.no-gutter-left {
+  padding-left: 0;
+}
 .flex-row {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -311,7 +317,6 @@ h1 {
   overflow: hidden;
   position: fixed;
   bottom: 0;
-  z-index: 1;
 }
 #footer {
   padding: 20px;
@@ -400,7 +405,7 @@ h1 {
 }
 .wrapper-box-naskah {
   border-bottom: 2px solid #2c3e50;
-  margin: 20px 0;
+  margin: 15px 0;
 }
 .wrapper-box-naskah:last-child {
   border-bottom: none;
@@ -450,7 +455,7 @@ h1 {
   text-align: justify;
 /* place for '...' */
   margin-right: -1em;
-  padding-right: 1em;
+  padding-right: 2em;
   font-family: 'Montserrat', sans-serif;
 }
 .content-box-naskah:before {
@@ -459,7 +464,7 @@ h1 {
 /* absolute position */
   position: absolute;
 /* set position to right bottom corner of block */
-  right: 0;
+  right: 1.3em;
   bottom: 0;
 }
 .content-box-naskah:after {
@@ -468,16 +473,13 @@ h1 {
 /* absolute position */
   position: absolute;
 /* set position to right bottom corner of text */
-  right: 0;
+  right: 1.3em;
 /* set width and height */
   width: 1em;
   height: 1em;
   margin-top: 0.2em;
 /* bg color = bg color under block */
   background: #fff;
-}
-.wrapper-naskah {
-  background-color: #ffc0cb;
 }
 .judul-naskah {
   font-size: 26px;
@@ -510,6 +512,80 @@ h1 {
 .share-detail:hover {
   text-decoration: none;
   color: #2c3e50;
+}
+.share-flex {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  max-width: 270px;
+}
+.icon-share {
+  width: 50px;
+}
+.wrapper-content-naskah {
+  padding: 20px 0;
+}
+.wrapper-content-naskah p {
+  font-family: 'Roboto', sans-serif;
+}
+.wrapper-comment {
+  background-color: #ddd;
+  padding: 10px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.wrapper-isi-comment {
+  background-color: #000;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  padding: 10px 0;
+  position: relative;
+}
+.icon-user {
+  height: 40px;
+}
+.btn-post {
+  margin-left: auto;
+  margin-right: 5px;
+}
+.btn-post:before {
+  content: '500';
+  position: absolute;
+  background-color: transparent;
+  color: #fff;
+  right: 65px;
+  bottom: 15px;
+}
+.people-comment {
+  margin: 15px 0;
+  min-height: 100px;
+  background-color: #fff;
 }
 @media (max-width: 1200px) {
   .wrapper-box {

@@ -32,7 +32,7 @@
 				<span class="tanggal-box-naskah">
 					12 Mei 2017
 				</span>
-				<a class="judul-box-naskah text-uppercase" href="#">
+				<a class="judul-box-naskah text-uppercase" href="<?php echo base_url();?>berita/testing/testing">
 					Judul Naskah
 				</a>
 				<p class="content-box-naskah">
