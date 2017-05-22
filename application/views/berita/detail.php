@@ -60,14 +60,76 @@
 				<div class="wrapper-comment">
 					<h5 style="font-size: 18px" class="judul-naskah">COMMENT</h5>
 					<div class="wrapper-isi-comment">
-						<img class="icon-user" src="<?php echo base_url();?>assets/gambar/serv/ico/user.png">
+						<img class="icon-user float-left" src="<?php echo base_url();?>assets/gambar/serv/ico/user.png">
 						<div style="width: 160px" class="form-group">
-						  <textarea style="resize: vertical;" class="form-control" rows="2" id="comment">Tulis Komentarmu...</textarea>
+						  <textarea style="resize: vertical;" class="form-control" rows="2" id="comment" placeholder="Tulis Komentarmu..."></textarea>
 						</div>
 						<button class="btn btn-default btn-post">Post</button>
 					</div>
 					<div class="people-comment">
-						
+						<div class="people-comment-identitas">
+							<div class="col-sm-3 no-gutter">
+								<img class="icon-user pull-left" src="<?php echo base_url();?>assets/gambar/serv/ico/user.png">
+							</div>
+							<div class="col-sm-9 no-gutter">	
+								<h5 class="comment-nama no-margin">Nama lu siapa</h5>
+								<h5 class="comment-tanggal">Jumat, 20 Mei 2017</h5>
+							</div>
+							<div class="isi-people-comment col-sm-12 no-gutter">
+								<p>Isi Naskahnya Kerennnz </p>
+							</div>
+							<div class="comment-feedback">
+								<label>
+									<input class="ckbx" name="test" type="checkbox">
+									<i class="icon-love fa fa-heart" aria-hidden="true"></i>
+								</label>
+								<span class="jumlah-love">0</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="people-comment">
+						<div class="people-comment-identitas">
+							<div class="col-sm-3 no-gutter">
+								<img class="icon-user pull-left" src="<?php echo base_url();?>assets/gambar/serv/ico/user.png">
+							</div>
+							<div class="col-sm-9 no-gutter">	
+								<h5 class="comment-nama no-margin">Nama lu siapa</h5>
+								<h5 class="comment-tanggal">Jumat, 20 Mei 2017</h5>
+							</div>
+							<div class="isi-people-comment col-sm-12 no-gutter">
+								<p>Isi Naskahnya Kerennnz </p>
+							</div>
+							<div class="comment-feedback">
+								<label>
+									<input class="ckbx" name="test1" type="checkbox">
+									<i class="icon-love fa fa-heart" aria-hidden="true"></i>
+								</label>
+								<span class="jumlah-love">0</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="people-comment">
+						<div class="people-comment-identitas">
+							<div class="col-sm-3 no-gutter">
+								<img class="icon-user pull-left" src="<?php echo base_url();?>assets/gambar/serv/ico/user.png">
+							</div>
+							<div class="col-sm-9 no-gutter">	
+								<h5 class="comment-nama no-margin">Nama lu siapa</h5>
+								<h5 class="comment-tanggal">Jumat, 20 Mei 2017</h5>
+							</div>
+							<div class="isi-people-comment col-sm-12 no-gutter">
+								<p>Isi Naskahnya Kerennnz </p>
+							</div>
+							<div class="comment-feedback">
+								<label>
+									<input class="ckbx" name="test2" type="checkbox">
+									<i class="icon-love fa fa-heart" aria-hidden="true"></i>
+								</label>
+								<span class="jumlah-love">0</span>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>

@@ -59,40 +59,26 @@ $(document).ready(function() {
 
     //console.log $(window).width()
     $(".left-side-banner, .right-side-banner").stick_in_parent();
- 	//    if (mq.matches) {
-	//    $(window).scroll(function (event) {
-	//     var scroll = $(window).scrollTop();
-	//     if (scroll > 1580){
-	//     	leftBanner.css({
-	//     		position: 'absolute',
-	//     		bottom: '350px'
-	//     	});
-	    	
-	//     }
-	//     else{
-	//     	leftBanner.css({
-	//     		position: 'fixed',
-	//     		top: '165px'
-	//     	});
-	//     	leftBanner.css('margin-left', '-130px');
-	//     }
-	// });
-	// } else {
-	// $(window).scroll(function (event) {
-	//     var scroll = $(window).scrollTop();
-	//     if (scroll > 2485){
-	//     	leftBanner.css({
-	//     		position: 'absolute',
-	//     		bottom: '0'
-	//     	});
-	//     }
-	//     else{
-	//     	leftBanner.css({
-	//     		position: 'fixed',
-	//     		top: '165px'
-	//     	});
-	//     	leftBanner.css('margin-left', '-130px');
-	//     }
-	// });
-	// }
+
+
+ 	$(".ckbx").click(function(event) {
+ 		$(this).siblings("i").css({
+ 			color: '#e74c3c',
+ 			transform: 'scale(1.5)',
+ 			marginRight: '5px',
+ 			marginLeft: '5px'
+ 		});
+ 		if ($(this).is(':checked')){
+	 	}else {
+	 		$(this).siblings("i").css({
+				transform: 'scale(1)',
+				marginRight: '0',
+				marginLeft: '0',
+				color: 'black'
+	 		})
+	 		
+	 	}
+ 	});
+
+
 });
