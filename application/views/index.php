@@ -56,41 +56,32 @@
 		<span class="text-divider">Berita</span>
 	</div>
 
-	<div id="menu-berita" class="row no-margin">
-		<div class="col-md-3">
-			<div class="wrapper-thumbnail-4">
-				<a href="<?php echo base_url(); ?>berita">
-					<img class="img-thumbnail-4" src="<?php echo base_url(); ?>assets/gambar/serv/banner-tengah.jpg">
-					<span class="thumbnail-4-text">Naskah</span>
-				</a>
-			</div>
+	<div id="menu-berita" class="no-margin flex-row">
+		<div class="wrapper-thumbnail-4">
+			<a href="<?php echo base_url(); ?>berita">
+				<img class="img-thumbnail-4" src="<?php echo base_url(); ?>assets/gambar/serv/banner-tengah.jpg">
+				<span class="thumbnail-4-text">Naskah</span>
+			</a>
+		</div>
+		<div class="wrapper-thumbnail-4">
+			<a href="#">
+				<img class="img-thumbnail-4" src="<?php echo base_url(); ?>assets/gambar/serv/banner-tengah.jpg">
+				<span class="thumbnail-4-text">Video Podcast</span>
+			</a>
 		</div>
 
-		<div class="col-md-3">
-			<div class="wrapper-thumbnail-4">
-				<a href="#">
-					<img class="img-thumbnail-4" src="<?php echo base_url(); ?>assets/gambar/serv/banner-tengah.jpg">
-					<span class="thumbnail-4-text">Video Podcast</span>
-				</a>
-			</div>
+		<div class="wrapper-thumbnail-4">
+			<a href="#">
+				<img class="img-thumbnail-4" src="<?php echo base_url(); ?>assets/gambar/serv/banner-tengah.jpg">
+				<span class="thumbnail-4-text">Opini</span>
+			</a>
 		</div>
 
-		<div class="col-md-3">
-			<div class="wrapper-thumbnail-4">
-				<a href="#">
-					<img class="img-thumbnail-4" src="<?php echo base_url(); ?>assets/gambar/serv/banner-tengah.jpg">
-					<span class="thumbnail-4-text">Opini</span>
-				</a>
-			</div>
-		</div>
-
-		<div class="col-md-3">
-			<div class="wrapper-thumbnail-4">
-				<a href="#">
-					<img class="img-thumbnail-4" src="<?php echo base_url(); ?>assets/gambar/serv/banner-tengah.jpg">
-					<span class="thumbnail-4-text">EMAGAZINE</span>
-				</a>
-			</div>
+		<div class="wrapper-thumbnail-4">
+			<a href="#">
+				<img class="img-thumbnail-4" src="<?php echo base_url(); ?>assets/gambar/serv/banner-tengah.jpg">
+				<span class="thumbnail-4-text">EMAGAZINE</span>
+			</a>
 		</div>
 	</div>
 	<!-- /berita -->
@@ -137,7 +128,7 @@
 			</div>
 			
 			<div id="loker-sub-menu" class="col-md-12 no-gutter">
-				<div class="col-md-4">
+				<div class="col-md-4 col-sm-4">
 					<div class="wrapper-relative wrapper-thumbnail-3">
 						<a href="#">
 							<img src="<?php echo base_url(); ?>assets/gambar/serv/banner-tengah.jpg">
@@ -146,7 +137,7 @@
 					</div>
 				</div>
 
-				<div class="col-md-4">
+				<div class="col-md-4 col-sm-4">
 					<div class="wrapper-relative wrapper-thumbnail-3">
 						<a href="#">
 							<img src="<?php echo base_url(); ?>assets/gambar/serv/banner-tengah.jpg">
@@ -155,7 +146,7 @@
 					</div>
 				</div>
 
-				<div class="col-md-4">
+				<div class="col-md-4 col-sm-4">
 					<div class="wrapper-relative wrapper-thumbnail-3">
 						<a href="#">
 							<img src="<?php echo base_url(); ?>assets/gambar/serv/banner-tengah.jpg">
@@ -210,7 +201,7 @@
 			</div>
 			
 			<div id="jualbeli-sub-menu" class="col-md-12 no-gutter">
-				<div class="col-md-4">
+				<div class="col-md-4 col-sm-4">
 					<div class="wrapper-relative wrapper-thumbnail-3">
 						<a href="#">
 							<img src="<?php echo base_url(); ?>assets/gambar/serv/banner-tengah.jpg">
@@ -219,7 +210,7 @@
 					</div>
 				</div>
 
-				<div class="col-md-4">
+				<div class="col-md-4 col-sm-4">
 					<div class="wrapper-relative wrapper-thumbnail-3">
 						<a href="#">
 							<img src="<?php echo base_url(); ?>assets/gambar/serv/banner-tengah.jpg">
@@ -228,7 +219,7 @@
 					</div>
 				</div>
 
-				<div class="col-md-4">
+				<div class="col-md-4 col-sm-4">
 					<div class="wrapper-relative wrapper-thumbnail-3">
 						<a href="#">
 							<img src="<?php echo base_url(); ?>assets/gambar/serv/banner-tengah.jpg">
@@ -303,7 +294,7 @@
 			</div>
 		</div>
 		<div id="interaksi-sub-menu" class="col-md-12 no-gutter">
-			<div class="col-md-4">
+			<div class="col-md-4 col-sm-4">
 				<div class="wrapper-relative wrapper-thumbnail-3">
 					<a href="#">
 						<img src="<?php echo base_url(); ?>assets/gambar/serv/banner-tengah.jpg">
@@ -312,7 +303,7 @@
 				</div>
 			</div>
 
-			<div class="col-md-4">
+			<div class="col-md-4 col-sm-4">
 				<div class="wrapper-relative wrapper-thumbnail-3">
 					<a href="#">
 						<img src="<?php echo base_url(); ?>assets/gambar/serv/banner-tengah.jpg">
@@ -321,7 +312,7 @@
 				</div>
 			</div>
 
-			<div class="col-md-4">
+			<div class="col-md-4 col-sm-4">
 				<div class="wrapper-relative wrapper-thumbnail-3">
 					<a href="#">
 						<img src="<?php echo base_url(); ?>assets/gambar/serv/banner-tengah.jpg">

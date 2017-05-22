@@ -22,6 +22,13 @@ class Utama extends CI_Controller {
 		$this->load->view('template/footer');
 	}
 
+	public function kategori()
+	{
+		$this->load->view('template/header');
+		$this->load->view('berita/kategori');
+		$this->load->view('template/footer');
+	}
+
 	public function detail_berita()
 	{
 		$this->load->view('template/header');

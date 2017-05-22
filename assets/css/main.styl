@@ -4,6 +4,10 @@
 	padding 0
 .no-margin
 	margin 0
+.flex-row
+	display flex
+	flex-direction row
+	justify-content space-between
 body
 	overflow-x hidden
 	overflow-y scroll
@@ -174,14 +178,13 @@ h1
 
 .wrapper-thumbnail-4
 	position relative
-	width 100%
-	padding 0 5px
 	height 113px
-	&:first-child
-		padding 0
+	width 230px
 .img-thumbnail-4
 	width 100%
-	height 150px
+
+#menu-berita
+	margin-bottom 35px
 
 #menu-berita .col-md-3
 	padding 0 5px
@@ -197,7 +200,7 @@ h1
 	text-transform uppercase
 	position absolute
 	z-index 10
-	bottom -35px
+	bottom -20px
 	font-family "Roboto"
 	left 10px
 	-webkit-transition: all .25s ease
@@ -349,6 +352,75 @@ h1
 .divider-konten
 	height 25px
 	
+// section kategori berita
+.wrapper-box-naskah
+	border-bottom 2px solid $hitam-dope
+	margin 20px 0
+	&:last-child
+		border-bottom none
+.tentang-wrapper
+	width 100%
+	border 2px solid $hitam-dope
+	min-height 111px
+.tentang-text
+	font-family $roboto
+	font-size 21px
+	font-weight bold
+	position absolute
+	top 50%
+	left 50%;
+	margin-right -50%;
+	transform translate(-50%, -50%)
+.tentang-wrapper
+	position relative
+.judul-box-naskah
+	color $hitam-dope
+	font-family $roboto
+	display block
+	font-size 20px
+	font-weight bold
+	margin 10px 0 5px
+	&:hover
+		text-decoration none
+		color tint($hitam-dope, 50%)
+.content-box-naskah
+	/* hide text if it more than N lines  */
+	overflow hidden
+	/* for set '...' in absolute position */
+	position relative 
+	/* use this value to count block height */
+	line-height 1.2em
+	/* max-height = line-height (1.2) * lines max number (3) */
+	max-height 3.6em
+	/* fix problem when last visible word doesn't adjoin right side  */
+	text-align justify  
+	/* place for '...' */
+	margin-right -1em
+	padding-right 1em
+	font-family $montserrat
+	
+	&:before
+		 /* points in the end */
+		content '...'
+		/* absolute position */
+		position absolute
+		/* set position to right bottom corner of block */
+		right 0
+		bottom 0
+
+	&:after
+		/* points in the end */
+		content: '';
+		/* absolute position */
+		position: absolute;
+		/* set position to right bottom corner of text */
+		right: 0;
+		/* set width and height */
+		width: 1em;
+		height: 1em;
+		margin-top: 0.2em;
+		/* bg color = bg color under block */
+		background: white;
 // section detail-berita
 .wrapper-naskah
 	background-color pink
@@ -383,8 +455,6 @@ h1
 		height 67px
 	.hashtag
 		font-size 16px
-	.thumbnail-4-text
-		font-size 18px
 	#utama
 		margin-bottom 330px
 	.left-side-banner
@@ -411,6 +481,13 @@ h1
 		margin-bottom 25px
 	.divider-konten
 		height 0
+	#menu-berita
+		margin-bottom -5px
+	.wrapper-thumbnail-4
+		width 150px
+	.thumbnail-4-text
+		font-size 18px
+		bottom 25px
 
 
 // media query 900px /sm
@@ -423,3 +500,12 @@ h1
 		top 85px
 		width 90px
 		margin-left 620px
+	#menu-berita
+		margin-bottom -25px
+	.thumbnail-4-text
+		bottom 40px
+	.wrapper-thumbnail-3
+		margin 10px 0
+	.text-wrapper-3
+		left 10px !important
+		font-size 20px !important
