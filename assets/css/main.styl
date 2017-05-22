@@ -1,12 +1,12 @@
-// container
-@media (min-width: 1200px)
-	.container
-		max-width 1300px
+
 	
 .no-gutter
 	padding 0
 .no-margin
 	margin 0
+body
+	overflow-x hidden
+	overflow-y scroll
 	
 // variable
 
@@ -19,27 +19,50 @@ $montserrat = 'Montserrat', sans-serif
 $roboto = 'Roboto', sans-serif
 $font-thumbnail = 26px
 $font-slider = 38px
+$judul-naskah = 26px
+$title-berita = 22px
 // /variable
+
+#utama
+	margin-bottom 275px
+	position relative
+	z-index 6
+
+.background-container
+	width 500%
+	background-color white
+	position absolute
+	top 0
+	left -100vh
+	z-index -3
+	min-height 100%
+	overflow hidden
 
 h1
 	font-family "Ubuntu"
 	
 .left-side-banner
-	text-align right
-	height 700px
-	z-index 1
+	position fixed
+	top 160px
+	margin-left 1065px
+	-webkit-transition: all .25s ease
+	-moz-transition: all .25s ease
+	-ms-transition: all .25s ease
+	-o-transition: all .25s ease
+	transition: all .25s ease
 	img
-		position fixed 
 		width 130px
-		top 150px
-		margin-left -120px
-	
+
 .right-side-banner
-	text-align left
-	min-height 700px
+	position fixed
+	top 160px
+	margin-left -60px
+	-webkit-transition: all .25s ease
+	-moz-transition: all .25s ease
+	-ms-transition: all .25s ease
+	-o-transition: all .25s ease
+	transition: all .25s ease
 	img
-		position fixed 
-		top 150px
 		width 130px
 	
 // center
@@ -47,7 +70,7 @@ h1
 	max-height 150px
 	position relative
 	img
-		width 80%
+		width 68%
 		z-index 2
 	.utility
 		float right
@@ -84,55 +107,54 @@ h1
 .hover-text-thumbnail
 	transform scale(1.1)
 	
+
+.wrapper-box
+	background-color $hitam
+	width 100%
+	height 111px
+	margin-bottom 20px
+	position relative
+	&:last-child
+		margin-bottom 0
+	
+#first-section.wrapper-center
+	margin-bottom 10px
+
 .wrapper-center
+	.first-img
+		width 100%
 	.first-wrapper
-		#first-img
-			width 100%
 		#first-sub-left
 			display flex
 			flex-direction column
 			flex-wrap wrap
-			.wrapper-box
-				background-color $hitam
-				width 100%
-				height 85px
-				margin-bottom 20px
-				position relative
-				
-		#first-sub-right
-			.wrapper-box
-				background-color $hitam
-				width 100%
-				height 85px
-				margin-bottom 20px
-				position relative
-		.col-sm-8
-			position relative
-			span
-				position absolute
-				bottom 0
-				left 22px
-				font-size 40px
-				text-decoration none
-				color white
-				-webkit-transition: all .25s ease
-				-moz-transition: all .25s ease
-				-ms-transition: all .25s ease
-				-o-transition: all .25s ease
-				transition: all .25s ease
-				font-family "Roboto"
-				font-weight bold
-	.banner-center
-		margin-top 10px
-		img
-			width 100%
-			height auto
+	.col-sm-8
+		position relative
+		span
+			position absolute
+			bottom 0
+			left 22px
+			font-size 40px
+			text-decoration none
+			color white
+			-webkit-transition: all .25s ease
+			-moz-transition: all .25s ease
+			-ms-transition: all .25s ease
+			-o-transition: all .25s ease
+			transition: all .25s ease
+			font-family "Roboto"
+			font-weight bold
+.banner-center
+	margin-top 10px
+	img
+		width 100%
+		height auto
 
 .big-divider
 	background-color black
 	width 100%
 	position relative
-	height 35px
+	height 45px
 	margin-bottom 10px
 
 .text-divider
@@ -146,6 +168,7 @@ h1
 	transform translate(-50%, -50%)
 	font-family $roboto
 	text-transform uppercase
+	font-weight 100
 	letter-spacing 1px
 	
 
@@ -158,11 +181,11 @@ h1
 		padding 0
 .img-thumbnail-4
 	width 100%
-	height 100%
+	height 150px
 
 #menu-berita .col-md-3
 	padding 0 5px
-	margin-bottom 15px
+	margin-bottom 48px
 	&:first-child
 		padding-left 0
 	&:last-child
@@ -174,7 +197,7 @@ h1
 	text-transform uppercase
 	position absolute
 	z-index 10
-	bottom 0
+	bottom -35px
 	font-family "Roboto"
 	left 10px
 	-webkit-transition: all .25s ease
@@ -212,4 +235,191 @@ h1
 		width 100%
 		img
 			width 100%
-			min-height 153px
+			height 191px
+			
+#jualbeli-sub-menu
+	height auto
+	margin 15px 0
+	.col-md-4
+		padding 0 5px
+		&:first-child
+			padding-left 0
+		&:last-child
+			padding-right 0
+	.wrapper-thumbnail-3
+		width 100%
+		img
+			width 100%
+			height 191px
+			
+#interaksi-sub-menu
+	height auto
+	margin 10px 0 0
+	.col-md-4
+		padding 0 5px
+		&:first-child
+			padding-left 0
+		&:last-child
+			padding-right 0
+	.wrapper-thumbnail-3
+		width 100%
+		img
+			width 100%
+			height 191px
+			
+.interaksi-side-text
+	font-size $font-divider
+	font-family $roboto
+	
+// footer
+#footer-container
+	height auto
+	background-color black
+	width 100%
+	overflow hidden
+	position fixed
+	bottom 0
+	z-index 1
+
+#footer
+	padding 20px
+	position relative
+	z-index 10
+	max-width 1400px
+	margin 0 auto
+	.col-lg-3
+		padding 0
+.logo-footer
+	height 55px
+.logo-gplay
+	width 100%
+	margin-top 15px
+	
+.footer-flex
+	display flex
+	flex-wrap wrap
+	flex-direction column
+	a
+		text-decoration none
+		color white
+		font-family $roboto
+		font-size $font-divider+2
+		margin-bottom 25px
+		-webkit-transition: all .25s ease
+		-moz-transition: all .25s ease
+		-ms-transition: all .25s ease
+		-o-transition: all .25s ease
+		&:hover
+			transform scale(1.05)
+			-webkit-transition: all .25s ease
+			-moz-transition: all .25s ease
+			-ms-transition: all .25s ease
+			-o-transition: all .25s ease
+		i
+			display inline-block
+			width 20px
+			
+// section berita
+.wrapper-berita
+	width 100%
+	padding 10px
+	border 2px solid $hitam-dope
+	
+.title-berita
+	font-size $title-berita
+	font-weight bold
+	font-family $roboto
+	text-align center
+	text-transform uppercase
+	margin 0 0 25px
+	
+.konten-berita
+	display block
+	font-size $font-divider
+	text-decoration none
+	color $hitam-dope
+	&:hover
+		text-decoration none
+		color $hitam-dope
+		transform scale()
+.paging-berita
+	font-size $font-divider - 6
+	color $hitam-dope
+	
+.divider-konten
+	height 25px
+	
+// section detail-berita
+.wrapper-naskah
+	background-color pink
+.judul-naskah
+	font-size $judul-naskah
+	font-family $roboto
+	margin 0
+	font-weight bold
+	margin-bottom 15px
+.wrapper-share
+	display flex
+	flex-direction column
+	flex-wrap wrap
+	align-content stretch
+.share-detail
+	text-decoration none
+	color $hitam-dope
+	font-family $roboto
+	font-size $font-divider
+	display inline-block
+	&:hover
+		text-decoration none
+		color $hitam-dope
+// @keyframes {asd}
+// 	0%
+// 		display flex
+
+
+// media query 1200px / md
+@media (max-width: 1200px)
+	.wrapper-box
+		height 67px
+	.hashtag
+		font-size 16px
+	.thumbnail-4-text
+		font-size 18px
+	#utama
+		margin-bottom 330px
+	.left-side-banner
+		top 110px
+		width 100px
+		margin-left 810px
+		img
+			width 100%
+	.right-side-banner
+		margin-left 30px
+		top 110px
+		width 100px
+		img
+			width 100%
+	.wrapper-relative span
+		font-size 24px
+	#loker-sub-menu .wrapper-thumbnail-3 img
+		height 123px
+	#jualbeli-sub-menu .wrapper-thumbnail-3 img
+		height 123px
+	#interaksi-sub-menu .wrapper-thumbnail-3 img
+		height 123px
+	.wrapper-berita
+		margin-bottom 25px
+	.divider-konten
+		height 0
+
+
+// media query 900px /sm
+@media (max-width: 990px)
+	.right-side-banner
+		margin-left 5px
+		top 85px
+		width 90px
+	.left-side-banner
+		top 85px
+		width 90px
+		margin-left 620px

@@ -29,4 +29,56 @@ $(document).ready(function() {
       interval: 5000
     });
 
+    $('#carouselJualBeli').carousel({
+      interval: 5000
+    });
+
+    //2246
+    var mq = window.matchMedia( "(max-width: 1200px)" );
+    console.log(mq)
+    var banner = $(".left-side-banner, .right-side-banner")
+    var leftBanner = $(".left-side-banner")
+    var imgLeftBanner = $(".left-side-banner img")
+    var jualbeli = $("#jualbeli")
+    var bannerKiri = (".left-side-banner")
+    var bannerKanan = (".right-side-banner")
+
+    //console.log $(window).width()
+    $(".left-side-banner, .right-side-banner").stick_in_parent();
+ 	//    if (mq.matches) {
+	//    $(window).scroll(function (event) {
+	//     var scroll = $(window).scrollTop();
+	//     if (scroll > 1580){
+	//     	leftBanner.css({
+	//     		position: 'absolute',
+	//     		bottom: '350px'
+	//     	});
+	    	
+	//     }
+	//     else{
+	//     	leftBanner.css({
+	//     		position: 'fixed',
+	//     		top: '165px'
+	//     	});
+	//     	leftBanner.css('margin-left', '-130px');
+	//     }
+	// });
+	// } else {
+	// $(window).scroll(function (event) {
+	//     var scroll = $(window).scrollTop();
+	//     if (scroll > 2485){
+	//     	leftBanner.css({
+	//     		position: 'absolute',
+	//     		bottom: '0'
+	//     	});
+	//     }
+	//     else{
+	//     	leftBanner.css({
+	//     		position: 'fixed',
+	//     		top: '165px'
+	//     	});
+	//     	leftBanner.css('margin-left', '-130px');
+	//     }
+	// });
+	// }
 });

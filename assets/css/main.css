@@ -1,35 +1,55 @@
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1300px;
-  }
-}
 .no-gutter {
   padding: 0;
 }
 .no-margin {
   margin: 0;
 }
+body {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+#utama {
+  margin-bottom: 275px;
+  position: relative;
+  z-index: 6;
+}
+.background-container {
+  width: 500%;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: -100vh;
+  z-index: -3;
+  min-height: 100%;
+  overflow: hidden;
+}
 h1 {
   font-family: "Ubuntu";
 }
 .left-side-banner {
-  text-align: right;
-  height: 700px;
-  z-index: 1;
+  position: fixed;
+  top: 160px;
+  margin-left: 1065px;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
 }
 .left-side-banner img {
-  position: fixed;
   width: 130px;
-  top: 150px;
-  margin-left: -120px;
 }
 .right-side-banner {
-  text-align: left;
-  min-height: 700px;
+  position: fixed;
+  top: 160px;
+  margin-left: -60px;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
 }
 .right-side-banner img {
-  position: fixed;
-  top: 150px;
   width: 130px;
 }
 .logo {
@@ -37,7 +57,7 @@ h1 {
   position: relative;
 }
 .logo img {
-  width: 80%;
+  width: 68%;
   z-index: 2;
 }
 .logo .utility {
@@ -82,7 +102,20 @@ h1 {
   -ms-transform: scale(1.1);
   transform: scale(1.1);
 }
-.wrapper-center .first-wrapper #first-img {
+.wrapper-box {
+  background-color: #000;
+  width: 100%;
+  height: 111px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.wrapper-box:last-child {
+  margin-bottom: 0;
+}
+#first-section.wrapper-center {
+  margin-bottom: 10px;
+}
+.wrapper-center .first-img {
   width: 100%;
 }
 .wrapper-center .first-wrapper #first-sub-left {
@@ -96,24 +129,10 @@ h1 {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
-.wrapper-center .first-wrapper #first-sub-left .wrapper-box {
-  background-color: #000;
-  width: 100%;
-  height: 85px;
-  margin-bottom: 20px;
+.wrapper-center .col-sm-8 {
   position: relative;
 }
-.wrapper-center .first-wrapper #first-sub-right .wrapper-box {
-  background-color: #000;
-  width: 100%;
-  height: 85px;
-  margin-bottom: 20px;
-  position: relative;
-}
-.wrapper-center .first-wrapper .col-sm-8 {
-  position: relative;
-}
-.wrapper-center .first-wrapper .col-sm-8 span {
+.wrapper-center .col-sm-8 span {
   position: absolute;
   bottom: 0;
   left: 22px;
@@ -128,10 +147,10 @@ h1 {
   font-family: "Roboto";
   font-weight: bold;
 }
-.wrapper-center .banner-center {
+.banner-center {
   margin-top: 10px;
 }
-.wrapper-center .banner-center img {
+.banner-center img {
   width: 100%;
   height: auto;
 }
@@ -139,7 +158,7 @@ h1 {
   background-color: #000;
   width: 100%;
   position: relative;
-  height: 35px;
+  height: 45px;
   margin-bottom: 10px;
 }
 .text-divider {
@@ -155,6 +174,7 @@ h1 {
   transform: translate(-50%, -50%);
   font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
+  font-weight: 100;
   letter-spacing: 1px;
 }
 .wrapper-thumbnail-4 {
@@ -168,11 +188,11 @@ h1 {
 }
 .img-thumbnail-4 {
   width: 100%;
-  height: 100%;
+  height: 150px;
 }
 #menu-berita .col-md-3 {
   padding: 0 5px;
-  margin-bottom: 15px;
+  margin-bottom: 48px;
 }
 #menu-berita .col-md-3:first-child {
   padding-left: 0;
@@ -186,7 +206,7 @@ h1 {
   text-transform: uppercase;
   position: absolute;
   z-index: 10;
-  bottom: 0;
+  bottom: -35px;
   font-family: "Roboto";
   left: 10px;
   -webkit-transition: all 0.25s ease;
@@ -229,5 +249,238 @@ h1 {
 }
 #loker-sub-menu .wrapper-thumbnail-3 img {
   width: 100%;
-  min-height: 153px;
+  height: 191px;
+}
+#jualbeli-sub-menu {
+  height: auto;
+  margin: 15px 0;
+}
+#jualbeli-sub-menu .col-md-4 {
+  padding: 0 5px;
+}
+#jualbeli-sub-menu .col-md-4:first-child {
+  padding-left: 0;
+}
+#jualbeli-sub-menu .col-md-4:last-child {
+  padding-right: 0;
+}
+#jualbeli-sub-menu .wrapper-thumbnail-3 {
+  width: 100%;
+}
+#jualbeli-sub-menu .wrapper-thumbnail-3 img {
+  width: 100%;
+  height: 191px;
+}
+#interaksi-sub-menu {
+  height: auto;
+  margin: 10px 0 0;
+}
+#interaksi-sub-menu .col-md-4 {
+  padding: 0 5px;
+}
+#interaksi-sub-menu .col-md-4:first-child {
+  padding-left: 0;
+}
+#interaksi-sub-menu .col-md-4:last-child {
+  padding-right: 0;
+}
+#interaksi-sub-menu .wrapper-thumbnail-3 {
+  width: 100%;
+}
+#interaksi-sub-menu .wrapper-thumbnail-3 img {
+  width: 100%;
+  height: 191px;
+}
+.interaksi-side-text {
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+#footer-container {
+  height: auto;
+  background-color: #000;
+  width: 100%;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+}
+#footer {
+  padding: 20px;
+  position: relative;
+  z-index: 10;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+#footer .col-lg-3 {
+  padding: 0;
+}
+.logo-footer {
+  height: 55px;
+}
+.logo-gplay {
+  width: 100%;
+  margin-top: 15px;
+}
+.footer-flex {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.footer-flex a {
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+  margin-bottom: 25px;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+}
+.footer-flex a:hover {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+}
+.footer-flex a i {
+  display: inline-block;
+  width: 20px;
+}
+.wrapper-berita {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #2c3e50;
+}
+.title-berita {
+  font-size: 22px;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 0 25px;
+}
+.konten-berita {
+  display: block;
+  font-size: 20px;
+  text-decoration: none;
+  color: #2c3e50;
+}
+.konten-berita:hover {
+  text-decoration: none;
+  color: #2c3e50;
+  -webkit-transform: scale();
+  -ms-transform: scale();
+  transform: scale();
+}
+.paging-berita {
+  font-size: 14px;
+  color: #2c3e50;
+}
+.divider-konten {
+  height: 25px;
+}
+.wrapper-naskah {
+  background-color: #ffc0cb;
+}
+.judul-naskah {
+  font-size: 26px;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.wrapper-share {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+}
+.share-detail {
+  text-decoration: none;
+  color: #2c3e50;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  display: inline-block;
+}
+.share-detail:hover {
+  text-decoration: none;
+  color: #2c3e50;
+}
+@media (max-width: 1200px) {
+  .wrapper-box {
+    height: 67px;
+  }
+  .hashtag {
+    font-size: 16px;
+  }
+  .thumbnail-4-text {
+    font-size: 18px;
+  }
+  #utama {
+    margin-bottom: 330px;
+  }
+  .left-side-banner {
+    top: 110px;
+    width: 100px;
+    margin-left: 810px;
+  }
+  .left-side-banner img {
+    width: 100%;
+  }
+  .right-side-banner {
+    margin-left: 30px;
+    top: 110px;
+    width: 100px;
+  }
+  .right-side-banner img {
+    width: 100%;
+  }
+  .wrapper-relative span {
+    font-size: 24px;
+  }
+  #loker-sub-menu .wrapper-thumbnail-3 img {
+    height: 123px;
+  }
+  #jualbeli-sub-menu .wrapper-thumbnail-3 img {
+    height: 123px;
+  }
+  #interaksi-sub-menu .wrapper-thumbnail-3 img {
+    height: 123px;
+  }
+  .wrapper-berita {
+    margin-bottom: 25px;
+  }
+  .divider-konten {
+    height: 0;
+  }
+}
+@media (max-width: 990px) {
+  .right-side-banner {
+    margin-left: 5px;
+    top: 85px;
+    width: 90px;
+  }
+  .left-side-banner {
+    top: 85px;
+    width: 90px;
+    margin-left: 620px;
+  }
 }
