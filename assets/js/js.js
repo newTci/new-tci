@@ -64,7 +64,7 @@ $(document).ready(function() {
  	$(".ckbx").click(function(event) {
  		$(this).siblings("i").css({
  			color: '#e74c3c',
- 			transform: 'scale(1.5)',
+ 			transform: 'scale(1.2)',
  			marginRight: '5px',
  			marginLeft: '5px'
  		});
