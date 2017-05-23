@@ -54,6 +54,7 @@
 						<?php echo $isi->isi_berita; ?>
 					</div>
 				</div>
+
 			</div>
 			<!-- <img style="width: 40px;" src="https://maxcdn.icons8.com/iOS7/PNG/50/Users/user_male_circle_filled-50.png"> -->
 			<div class="col-lg-5">
@@ -132,6 +133,68 @@
 						</div>
 					</div>
 				</div>
+			</div>
+			<div class="wrapper-hashtag-naskah">
+				<div class="wrapper-hashtag-naskah-kecil">
+					<a href="#"><i>#HASHTAG</i></a>
+				</div>
+
+				<div class="wrapper-hashtag-naskah-kecil">
+					<a href="#"><i>#AkuGanteng</i></a>
+				</div>
+
+				<div class="wrapper-hashtag-naskah-kecil">
+					<a href="#"><i>#AnakSehat</i></a>
+				</div>
+
+				<div class="wrapper-hashtag-naskah-kecil">
+					<a href="#"><i>#KeboBule</i></a>
+				</div>
+
+				<div class="wrapper-hashtag-naskah-kecil">
+					<a href="#"><i>#AnakSehat</i></a>
+				</div>
+
+				<div class="wrapper-hashtag-naskah-kecil">
+					<a href="#"><i>#AnakSehat</i></a>
+				</div>
+
+				<div class="wrapper-hashtag-naskah-kecil">
+					<a href="#"><i>#HASHTAG</i></a>
+				</div>
+
+				<div class="wrapper-hashtag-naskah-kecil">
+					<a href="#"><i>#AkuGanteng</i></a>
+				</div>
+
+				<div class="wrapper-hashtag-naskah-kecil">
+					<a href="#"><i>#HASHTAG</i></a>
+				</div>
+
+				<div class="wrapper-hashtag-naskah-kecil">
+					<a href="#"><i>#AkuGanteng</i></a>
+				</div>
+			</div>
+
+			<div class="wrapper-naskah-rekomend col-sm-6">
+				<h5 class="judul-naskah">Terkait</h5>
+				<a href="#" class="konten-berita">Judul Berita</a>
+				<a href="#" class="konten-berita">Judul Berita</a>
+				<a href="#" class="konten-berita">Judul Berita</a>
+				<a href="#" class="konten-berita">Judul Berita</a>
+				<a href="#" class="konten-berita">Judul Berita</a>
+				<a href="#" class="konten-berita">Judul Berita</a>
+				<a href="#" class="konten-berita">Judul Berita</a>
+			</div>
+			<div class="wrapper-naskah-rekomend col-sm-6">
+				<h5 class="judul-naskah">Rekomendasi</h5>
+				<a href="#" class="konten-berita">Judul Berita</a>
+				<a href="#" class="konten-berita">Judul Berita</a>
+				<a href="#" class="konten-berita">Judul Berita</a>
+				<a href="#" class="konten-berita">Judul Berita</a>
+				<a href="#" class="konten-berita">Judul Berita</a>
+				<a href="#" class="konten-berita">Judul Berita</a>
+				<a href="#" class="konten-berita">Judul Berita</a>
 			</div>
 		</div>
 		<div class="col-lg-2 col-sm-2 col-md-2 no-gutter">
