@@ -4,6 +4,14 @@
 	padding 0
 .no-margin
 	margin 0
+.no-gutter-right
+	padding-right 0
+.no-gutter-left
+	padding-left 0
+.flex-row
+	display flex
+	flex-direction row
+	justify-content space-between
 body
 	overflow-x hidden
 	overflow-y scroll
@@ -174,14 +182,13 @@ h1
 
 .wrapper-thumbnail-4
 	position relative
-	width 100%
-	padding 0 5px
 	height 113px
-	&:first-child
-		padding 0
+	width 230px
 .img-thumbnail-4
 	width 100%
-	height 150px
+
+#menu-berita
+	margin-bottom 35px
 
 #menu-berita .col-md-3
 	padding 0 5px
@@ -197,7 +204,7 @@ h1
 	text-transform uppercase
 	position absolute
 	z-index 10
-	bottom -35px
+	bottom -20px
 	font-family "Roboto"
 	left 10px
 	-webkit-transition: all .25s ease
@@ -279,7 +286,6 @@ h1
 	overflow hidden
 	position fixed
 	bottom 0
-	z-index 1
 
 #footer
 	padding 20px
@@ -349,9 +355,76 @@ h1
 .divider-konten
 	height 25px
 	
+// section kategori berita
+.wrapper-box-naskah
+	border-bottom 2px solid $hitam-dope
+	margin 15px 0
+	&:last-child
+		border-bottom none
+.tentang-wrapper
+	width 100%
+	border 2px solid $hitam-dope
+	min-height 111px
+.tentang-text
+	font-family $roboto
+	font-size 21px
+	font-weight bold
+	position absolute
+	top 50%
+	left 50%;
+	margin-right -50%;
+	transform translate(-50%, -50%)
+.tentang-wrapper
+	position relative
+.judul-box-naskah
+	color $hitam-dope
+	font-family $roboto
+	display block
+	font-size 20px
+	font-weight bold
+	margin 10px 0 5px
+	&:hover
+		text-decoration none
+		color tint($hitam-dope, 50%)
+.content-box-naskah
+	/* hide text if it more than N lines  */
+	overflow hidden
+	/* for set '...' in absolute position */
+	position relative 
+	/* use this value to count block height */
+	line-height 1.2em
+	/* max-height = line-height (1.2) * lines max number (3) */
+	max-height 3.6em
+	/* fix problem when last visible word doesn't adjoin right side  */
+	text-align justify  
+	/* place for '...' */
+	margin-right -1em
+	padding-right 2em
+	font-family $montserrat
+	
+	&:before
+		 /* points in the end */
+		content '...'
+		/* absolute position */
+		position absolute
+		/* set position to right bottom corner of block */
+		right 1.3em
+		bottom 0
+
+	&:after
+		/* points in the end */
+		content: '';
+		/* absolute position */
+		position: absolute;
+		/* set position to right bottom corner of text */
+		right: 1.3em;
+		/* set width and height */
+		width: 1em;
+		height: 1em;
+		margin-top: 0.2em;
+		/* bg color = bg color under block */
+		background: white;
 // section detail-berita
-.wrapper-naskah
-	background-color pink
 .judul-naskah
 	font-size $judul-naskah
 	font-family $roboto
@@ -372,6 +445,104 @@ h1
 	&:hover
 		text-decoration none
 		color $hitam-dope
+.share-flex
+	display flex
+	flex-direction row
+	flex-wrap nowrap
+	justify-content space-between
+	max-width 270px
+.icon-share
+	width 50px
+.wrapper-content-naskah
+	padding 20px 0
+	p
+		font-family $roboto
+.wrapper-comment
+	background-color #ddd
+	padding 10px
+	display flex
+	flex-direction column
+	flex-wrap wrap
+	margin-bottom 20px
+.wrapper-isi-comment
+	background-color black
+	display flex
+	flex-direction row
+	flex-wrap wrap
+	justify-content space-around
+	padding 10px 0
+	position relative
+.icon-user
+	height 40px
+.btn-post
+	margin-left auto
+	margin-right 5px
+	&:before
+		content '500'
+		position absolute
+		background-color transparent
+		color white
+		right 65px
+		bottom 15px
+.people-comment
+	margin 15px 0 0
+	min-height 100px
+	background-color white
+	display flex
+	flex-direction row
+	flex-wrap wrap
+	padding 10px 0
+	justify-content space-around
+.people-comment-identitas
+	width 100%
+	padding 0 5px
+.comment-nama
+	font-size 16px
+	font-family $roboto
+	font-weight bold
+.comment-tanggal
+	font-weight light
+	color tint(black, 50%)
+	margin-top 5px
+.isi-people-comment
+	border-bottom 2px solid $hitam-dope
+	font-family $roboto
+	margin-bottom 10px
+	margin-top 20px
+.icon-love
+	font-size 20px !important
+	-webkit-transition: all 0.25s ease
+	-moz-transition: all 0.25s ease
+	-ms-transition: all 0.25s ease
+	-o-transition: all 0.25s ease
+	transition: all 0.25s ease
+	&:hover
+		cursor pointer
+		
+.jumlah-love
+	font-size 20px
+	font-family $roboto 
+.ckbx
+	display none
+	
+.wrapper-hashtag-naskah
+	display flex
+	flex-direction row
+	flex-wrap wrap
+	width 100%
+	justify-content flex-start
+.wrapper-hashtag-naskah-kecil
+	min-width 100px
+	padding 5px 10px
+	background-color black
+	margin 0 10px 10px
+	a
+		font-size 16px
+		color white
+		font-family $roboto
+.wrapper-naskah-rekomend
+	margin 20px 0
+	
 // @keyframes {asd}
 // 	0%
 // 		display flex
@@ -383,8 +554,6 @@ h1
 		height 67px
 	.hashtag
 		font-size 16px
-	.thumbnail-4-text
-		font-size 18px
 	#utama
 		margin-bottom 330px
 	.left-side-banner
@@ -411,6 +580,13 @@ h1
 		margin-bottom 25px
 	.divider-konten
 		height 0
+	#menu-berita
+		margin-bottom -5px
+	.wrapper-thumbnail-4
+		width 150px
+	.thumbnail-4-text
+		font-size 18px
+		bottom 25px
 
 
 // media query 900px /sm
@@ -423,3 +599,12 @@ h1
 		top 85px
 		width 90px
 		margin-left 620px
+	#menu-berita
+		margin-bottom -25px
+	.thumbnail-4-text
+		bottom 40px
+	.wrapper-thumbnail-3
+		margin 10px 0
+	.text-wrapper-3
+		left 10px !important
+		font-size 20px !important
