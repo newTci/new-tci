@@ -25,7 +25,7 @@
 						<div class="item">
 							<a href="#">
 								<img class="first-img" src="<?php echo base_url(); ?>assets/gambar/serv/banner-tengah.jpg">
-								<span href="#">VIDEO PODCAST</span>
+								<span>VIDEO PODCAST</span>
 							</a>
 						</div>
 						<div class="item">
@@ -64,7 +64,7 @@
 			</a>
 		</div>
 		<div class="wrapper-thumbnail-4">
-			<a href="#">
+			<a href="<?php echo base_url(); ?>podcast">
 				<img class="img-thumbnail-4" src="<?php echo base_url(); ?>assets/gambar/serv/banner-tengah.jpg">
 				<span class="thumbnail-4-text">Video Podcast</span>
 			</a>

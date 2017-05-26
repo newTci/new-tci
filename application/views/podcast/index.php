@@ -23,7 +23,80 @@
 			</div>
 		</div>
 		<div class="col-lg-8 col-sm-8 col-md-8 no-gutter">
-			
+			<div class="wrapper-podcast">
+				<div class="wrapper-inner-podcast">
+					<a href="#">
+						<img src="<?php echo base_url();?>/assets/gambar/serv/jalan-jalan.jpg" alt="">
+						<h5>Dig Into The Business Of Sport1</h5>
+					</a>
+				</div>
+				<div class="wrapper-inner-podcast">
+					<a href="#">
+						<img src="<?php echo base_url();?>/assets/gambar/serv/jalan-jalan.jpg" alt="">
+						<h5>Dig Into The Business Of Sport2</h5>
+					</a>
+				</div>
+				<div class="wrapper-inner-podcast">
+					<a href="#">
+						<img src="<?php echo base_url();?>/assets/gambar/serv/jalan-jalan.jpg" alt="">
+						<h5>Dig Into The Business Of Sport3</h5>
+					</a>
+				</div>
+				<div class="wrapper-inner-podcast">
+					<a href="#">
+						<img src="<?php echo base_url();?>/assets/gambar/serv/jalan-jalan.jpg" alt="">
+						<h5>Dig Into The Business Of Sport</h5>
+					</a>
+				</div>
+				<div class="wrapper-inner-podcast">
+					<a href="#">
+						<img src="<?php echo base_url();?>/assets/gambar/serv/jalan-jalan.jpg" alt="">
+						<h5>Dig Into The Business Of Sport</h5>
+					</a>
+				</div>
+				<div class="wrapper-inner-podcast">
+					<a href="#">
+						<img src="<?php echo base_url();?>/assets/gambar/serv/jalan-jalan.jpg" alt="">
+						<h5>Dig Into The Business Of Sport</h5>
+					</a>
+				</div>
+				<div class="wrapper-inner-podcast">
+					<a href="#">
+						<img src="<?php echo base_url();?>/assets/gambar/serv/jalan-jalan.jpg" alt="">
+						<h5>Dig Into The Business Of Sport</h5>
+					</a>
+				</div>
+				<div class="wrapper-inner-podcast">
+					<a href="#">
+						<img src="<?php echo base_url();?>/assets/gambar/serv/jalan-jalan.jpg" alt="">
+						<h5>Dig Into The Business Of Sport</h5>
+					</a>
+				</div>
+				<div class="wrapper-inner-podcast">
+					<a href="#">
+						<img src="<?php echo base_url();?>/assets/gambar/serv/jalan-jalan.jpg" alt="">
+						<h5>Dig Into The Business Of Sport</h5>
+					</a>
+				</div>
+				<div class="wrapper-inner-podcast">
+					<a href="#">
+						<img src="<?php echo base_url();?>/assets/gambar/serv/jalan-jalan.jpg" alt="">
+						<h5>Dig Into The Business Of Sport</h5>
+					</a>
+				</div>
+				<div class="wrapper-inner-podcast">
+					<a href="#">
+						<img src="<?php echo base_url();?>/assets/gambar/serv/jalan-jalan.jpg" alt="">
+						<h5>Dig Into The Business Of Sport</h5>
+					</a>
+				</div>
+				<div class="wrapper-inner-podcast">
+					<a href="#">
+						<img src="<?php echo base_url();?>/assets/gambar/serv/jalan-jalan.jpg" alt="">
+						<h5>Dig Into The Business Of Sport</h5>
+					</a>
+				</div>
+			</div>
 		</div>
 		<div class="col-lg-2 col-sm-2 col-md-2 no-gutter">
 			<div class="wrapper-box">
