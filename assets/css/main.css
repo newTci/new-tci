@@ -596,7 +596,7 @@ h1 {
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  padding: 10px 0;
+  padding: 10px;
   -webkit-justify-content: space-around;
   -ms-flex-pack: distribute;
   justify-content: space-around;
@@ -668,6 +668,10 @@ h1 {
 .wrapper-naskah-rekomend {
   margin: 20px 0;
 }
+.textarea-comment {
+  width: 160px;
+  margin-bottom: 15px;
+}
 @media (max-width: 1200px) {
   .wrapper-box {
     height: 67px;
@@ -722,6 +726,20 @@ h1 {
     font-size: 18px;
     bottom: 25px;
   }
+  .textarea-comment {
+    width: 190px;
+    margin-left: 15px;
+  }
+  .wrapper-isi-comment {
+    padding: 15px;
+  }
+  .btn-post {
+    height: 55px;
+  }
+  .btn-post:before {
+    right: 35px;
+    bottom: 5px;
+  }
 }
 @media (max-width: 990px) {
   .right-side-banner {
@@ -746,5 +764,12 @@ h1 {
   .text-wrapper-3 {
     left: 10px !important;
     font-size: 20px !important;
+  }
+  .btn-post {
+    height: auto;
+  }
+  .btn-post:before {
+    right: 85px;
+    bottom: 20px;
   }
 }
