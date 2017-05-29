@@ -19,7 +19,6 @@ $(document).ready(function() {
 			$(".left-side-banner").next("div").addClass('ilang')
 			$(".right-side-banner").next("div").addClass('ilang')
 			//$(".ilang").remove();
-			console.log("ASD")
 			$(".ilang").css({
 				visibility: 'hidden'
 			});
@@ -80,5 +79,32 @@ $(document).ready(function() {
 	 	}
  	});
 
+ 	
+});
 
+$('.konten-berita').each(function() {
+    var text = $(this).text();
+   	
+	if(text.length > 12) {
+	 	var trimmedString = text.substr(0, 20);
+    	trimmedString = trimmedString.substr(0, Math.min(trimmedString.length, trimmedString.lastIndexOf(" ")))
+		$(this).text(trimmedString + '...')
+		//$(this).text(text.substring(0, 18) + '..')
+	}
+});
+
+$(".konten-berita").hover(function() {
+	var text = $(this).data('judul')
+	$(this).text(text);
+}, function() {
+	var text = $(this).text();
+	var k = $(this)
+	var trimmedString = text.substr(0, 20);
+	trimmedString = trimmedString.substr(0, Math.min(trimmedString.length, trimmedString.lastIndexOf(" ")))
+	k.text(trimmedString + '...')
+	// setTimeout(function(){
+	// 	console.log($(this))
+	// 	k.text(trimmedString + '...')
+	// }, 200);
+	
 });

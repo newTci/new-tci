@@ -32,6 +32,9 @@ $judul-naskah = 26px
 $title-berita = 22px
 // /variable
 
+.rel
+	position relative
+
 #utama
 	margin-bottom 275px
 	position relative
@@ -340,15 +343,27 @@ h1
 	text-transform uppercase
 	margin 0 0 25px
 	
+.abs-icon
+	position absolute
+	top 7px
+	left 0
 .konten-berita
+	padding-left 15px
 	display block
 	font-size $font-divider
 	text-decoration none
 	color $hitam-dope
+	-webkit-transition: all .25s ease
+	-moz-transition: all .25s ease
+	-ms-transition: all .25s ease
+	-o-transition: all .25s ease
+	transition: all .25s ease
 	&:hover
 		text-decoration none
-		color $hitam-dope
-		transform scale()
+		color tint(red, 40%)
+	&:focus
+		color tint(red, 40%)
+		text-decoration none
 .paging-berita
 	font-size $font-divider - 6
 	color $hitam-dope

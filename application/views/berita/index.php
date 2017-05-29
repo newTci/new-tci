@@ -28,16 +28,13 @@
 					<h5 class="title-berita">
 						Communication
 					</h5>
-					<a href="#" class="konten-berita">Judul Berita...</a>
-					<a href="#" class="konten-berita">Judul Berita...</a>
-					<a href="#" class="konten-berita">Judul Berita...</a>
-					<a href="#" class="konten-berita">Judul Berita...</a>
-					<a href="#" class="konten-berita">Judul Berita...</a>
-					<a href="#" class="konten-berita">Judul Berita...</a>
-					<a href="#" class="konten-berita">Judul Berita...</a>
-					<a href="#" class="konten-berita">Judul Berita...</a>
-					<a href="#" class="konten-berita">Judul Berita...</a>
-					<div class="text-right"><a href="#" class="paging-berita">MORE</a></div>
+					<?php foreach ($communication as $val) {?>
+					<div class="rel">
+						<i class="abs-icon fa fa-chevron-right" aria-hidden="true"></i>
+						<a href="#" data-judul="<?php echo $val->judul; ?>" class="konten-berita"><?php echo $val->judul; ?></a>
+					</div>
+					<?php } ?>
+					<div class="text-right"><button class="more-berita-btn" data-kategori="communication" class="paging-berita">MORE</button></div>
 				</div>
 			</div>
 			<div class="col-lg-6 col-md-12">
@@ -45,15 +42,12 @@
 					<h5 class="title-berita">
 						Creative
 					</h5>
-					<a href="#" class="konten-berita">Judul Berita...</a>
-					<a href="#" class="konten-berita">Judul Berita...</a>
-					<a href="#" class="konten-berita">Judul Berita...</a>
-					<a href="#" class="konten-berita">Judul Berita...</a>
-					<a href="#" class="konten-berita">Judul Berita...</a>
-					<a href="#" class="konten-berita">Judul Berita...</a>
-					<a href="#" class="konten-berita">Judul Berita...</a>
-					<a href="#" class="konten-berita">Judul Berita...</a>
-					<a href="#" class="konten-berita">Judul Berita...</a>
+					<?php foreach ($creative as $val) {?>
+						<div class="rel">
+							<i class="abs-icon fa fa-chevron-right" aria-hidden="true"></i>
+							<a href="#" data-judul="<?php echo $val->judul; ?>" class="konten-berita"><?php echo $val->judul; ?></a>
+						</div>
+					<?php } ?>
 					<div class="text-right"><a href="#" class="paging-berita">MORE</a></div>
 				</div>
 			</div>
@@ -63,15 +57,12 @@
 					<h5 class="title-berita">
 						Finance
 					</h5>
-					<a href="#" class="konten-berita">Judul Berita...</a>
-					<a href="#" class="konten-berita">Judul Berita...</a>
-					<a href="#" class="konten-berita">Judul Berita...</a>
-					<a href="#" class="konten-berita">Judul Berita...</a>
-					<a href="#" class="konten-berita">Judul Berita...</a>
-					<a href="#" class="konten-berita">Judul Berita...</a>
-					<a href="#" class="konten-berita">Judul Berita...</a>
-					<a href="#" class="konten-berita">Judul Berita...</a>
-					<a href="#" class="konten-berita">Judul Berita...</a>
+					<?php foreach ($finance as $val) {?>
+						<div class="rel">
+							<i class="abs-icon fa fa-chevron-right" aria-hidden="true"></i>
+							<a href="#" data-judul="<?php echo $val->judul; ?>" class="konten-berita"><?php echo $val->judul; ?></a>
+						</div>
+					<?php } ?>
 					<div class="text-right"><a href="#" class="paging-berita">MORE</a></div>
 				</div>
 			</div>
@@ -80,15 +71,12 @@
 					<h5 class="title-berita">
 						Health
 					</h5>
-					<a href="#" class="konten-berita">Judul Berita...</a>
-					<a href="#" class="konten-berita">Judul Berita...</a>
-					<a href="#" class="konten-berita">Judul Berita...</a>
-					<a href="#" class="konten-berita">Judul Berita...</a>
-					<a href="#" class="konten-berita">Judul Berita...</a>
-					<a href="#" class="konten-berita">Judul Berita...</a>
-					<a href="#" class="konten-berita">Judul Berita...</a>
-					<a href="#" class="konten-berita">Judul Berita...</a>
-					<a href="#" class="konten-berita">Judul Berita...</a>
+					<?php foreach ($health as $val) {?>
+						<div class="rel">
+							<i class="abs-icon fa fa-chevron-right" aria-hidden="true"></i>
+							<a href="#" data-judul="<?php echo $val->judul; ?>" class="konten-berita"><?php echo $val->judul; ?></a>
+						</div>
+					<?php } ?>
 					<div class="text-right"><a href="#" class="paging-berita">MORE</a></div>
 				</div>
 			</div>
@@ -98,15 +86,12 @@
 					<h5 class="title-berita">
 						Social
 					</h5>
-					<a href="#" class="konten-berita">Judul Berita...</a>
-					<a href="#" class="konten-berita">Judul Berita...</a>
-					<a href="#" class="konten-berita">Judul Berita...</a>
-					<a href="#" class="konten-berita">Judul Berita...</a>
-					<a href="#" class="konten-berita">Judul Berita...</a>
-					<a href="#" class="konten-berita">Judul Berita...</a>
-					<a href="#" class="konten-berita">Judul Berita...</a>
-					<a href="#" class="konten-berita">Judul Berita...</a>
-					<a href="#" class="konten-berita">Judul Berita...</a>
+					<?php foreach ($social as $val) {?>
+						<div class="rel">
+							<i class="abs-icon fa fa-chevron-right" aria-hidden="true"></i>
+							<a href="#" data-judul="<?php echo $val->judul; ?>" class="konten-berita"><?php echo $val->judul; ?></a>
+						</div>
+					<?php } ?>
 					<div class="text-right"><a href="#" class="paging-berita">MORE</a></div>
 				</div>
 			</div>
@@ -115,15 +100,12 @@
 					<h5 class="title-berita">
 						Technology
 					</h5>
-					<a href="#" class="konten-berita">Judul Berita...</a>
-					<a href="#" class="konten-berita">Judul Berita...</a>
-					<a href="#" class="konten-berita">Judul Berita...</a>
-					<a href="#" class="konten-berita">Judul Berita...</a>
-					<a href="#" class="konten-berita">Judul Berita...</a>
-					<a href="#" class="konten-berita">Judul Berita...</a>
-					<a href="#" class="konten-berita">Judul Berita...</a>
-					<a href="#" class="konten-berita">Judul Berita...</a>
-					<a href="#" class="konten-berita">Judul Berita...</a>
+					<?php foreach ($technology as $val) {?>
+						<div class="rel">
+							<i class="abs-icon fa fa-chevron-right" aria-hidden="true"></i>
+							<a href="#" data-judul="<?php echo $val->judul; ?>" class="konten-berita"><?php echo $val->judul; ?></a>
+						</div>
+					<?php } ?>
 					<div class="text-right"><a href="#" class="paging-berita">MORE</a></div>
 				</div>
 			</div>
@@ -141,3 +123,20 @@
 		</div>
 	</div>
 </div>
+
+<script type="text/javascript">
+	$(".more-berita-btn").click(function(event) {
+ 		var kategori = $(this).data('kategori');
+ 		$.ajax(
+            {
+                type:"post",
+                url: "<?php echo base_url(); ?>tambah_berita",
+                data:{kategori:kategori},
+                success:function(response)
+                {
+                    console.log(response);
+                }
+            }
+        );
+ 	});
+</script>

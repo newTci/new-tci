@@ -6,6 +6,7 @@ class Utama extends CI_Controller {
 	function __construct(){
 	    parent::__construct();
 	    $this->load->helper('url');
+		$this->load->database();
 	}
 
 	public function index()
@@ -17,9 +18,25 @@ class Utama extends CI_Controller {
 
 	public function berita()
 	{
+		$this->load->model('berita');
+		$data['health'] = $this->berita->getJudulBeritaByKategori("Health", 9);
+		$data['communication'] = $this->berita->getJudulBeritaByKategori("Communication", 9);
+		$data['finance'] = $this->berita->getJudulBeritaByKategori("Finance", 9);
+		$data['social'] = $this->berita->getJudulBeritaByKategori("Social", 9);
+		$data['creative'] = $this->berita->getJudulBeritaByKategori("Creative", 9);
+		$data['technology'] = $this->berita->getJudulBeritaByKategori("Technology", 9);
 		$this->load->view('template/header');
-		$this->load->view('berita/index');
+		$this->load->view('berita/index', $data);
 		$this->load->view('template/footer');
+	}
+
+	public function more_berita()
+	{
+		$kategori = $this->input->post('kategori');
+		$data = array(
+			'username' => $kategori
+		);
+		echo json_encode($data);
 	}
 
 	public function kategori()
@@ -31,7 +48,6 @@ class Utama extends CI_Controller {
 
 	public function detail_berita()
 	{
-		$this->load->database();
 		$sql = "SELECT isi_berita FROM berita ORDER BY tanggal ASC LIMIT 1";
 		$data['isi'] = $this->db->query($sql)->row();
 		$this->load->view('template/header');
