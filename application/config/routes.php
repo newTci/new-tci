@@ -57,3 +57,4 @@ $route['translate_uri_dashes'] = FALSE;
 $route['berita'] = 'Utama/berita';
 $route['berita/(:any)'] = 'Utama/kategori';
 $route['berita/(:any)/(:any)'] = 'Utama/detail_berita';
+$route['podcast'] = 'Utama/podcast';
