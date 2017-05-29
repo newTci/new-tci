@@ -12,6 +12,7 @@
 	display flex
 	flex-direction row
 	justify-content space-between
+	flex-wrap nowrap
 body
 	overflow-x hidden
 	overflow-y scroll
@@ -136,7 +137,7 @@ h1
 			display flex
 			flex-direction column
 			flex-wrap wrap
-	.col-sm-8
+	.col-sm-12, .col-sm-8
 		position relative
 		span
 			position absolute
@@ -635,7 +636,7 @@ h1
 		width 90px
 		margin-left 620px
 	#menu-berita
-		margin-bottom -25px
+		margin-bottom 0
 	.thumbnail-4-text
 		bottom 40px
 	.wrapper-thumbnail-3
@@ -648,3 +649,30 @@ h1
 		&:before
 			right 85px
 			bottom 20px
+	.hidden-hashtag
+		margin-top 15px
+	.flex-row
+		flex-wrap wrap
+		.wrapper-thumbnail-4
+			width 49%
+			margin-bottom 10px
+			height auto
+	.wrapper-box
+		width 98%
+	.first-sub-right2
+		display flex
+		flex-direction row
+		align-content flex-end
+		flex-wrap wrap
+		padding-left 5px
+		.wrapper-box
+			width 100%
+	.slider-nonext
+		padding 0
+	.interaksi-sub-menu
+		margin-bottom 5px
+	.slider-nonext2
+		margin-bottom 10px
+		padding 0
+	.rekomen-hidden
+		margin-bottom -10px

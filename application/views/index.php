@@ -2,18 +2,18 @@
 	<div id="first-section" class="wrapper-center">
 		
 		<div class="first-wrapper row no-margin">
-			<div id="first-sub-left" class="col-sm-2 no-gutter">
+			<div id="first-sub-left" class="col-sm-2 hidden-sm no-gutter">
 				<div class="wrapper-box">
-					<span class="hashtag">#ahok</span>
+					<a class="hashtag-utama" href="#"><span class="hashtag">#ahok</span></a>
 				</div>
 				<div class="wrapper-box">
-					<span class="hashtag">#ahok</span>
+					<a class="hashtag-utama" href="#"><span class="hashtag">#ahok</span></a>
 				</div>
 				<div class="wrapper-box">
-					<span class="hashtag">#ahok</span>
+					<a class="hashtag-utama" href="#"><span class="hashtag">#ahok</span></a>
 				</div>
 			</div>
-			<div class="col-sm-8">
+			<div class="slider-nonext col-sm-12 col-md-8">
 				<div id="myCarousel" class="carousel slide" data-ride="carousel">
 				 	<div class="carousel-inner">
 						<div class="item active">
@@ -37,15 +37,39 @@
 					</div>
 				</div>
 			</div>
-			<div id="first-sub-right" class="col-sm-2 no-gutter">
+			<!-- hidden -->
+			<div id="first-sub-left" class="hidden-hashtag col-sm-6 hidden-lg hidden-md no-gutter">
 				<div class="wrapper-box">
-					<span class="hashtag">#ahok</span>
+					<a class="hashtag-utama" href="#"><span class="hashtag">#ahok</span></a>
 				</div>
 				<div class="wrapper-box">
-					<span class="hashtag">#ahok</span>
+					<a class="hashtag-utama" href="#"><span class="hashtag">#ahok</span></a>
 				</div>
 				<div class="wrapper-box">
-					<span class="hashtag">#ahok</span>
+					<a class="hashtag-utama" href="#"><span class="hashtag">#ahok</span></a>
+				</div>
+			</div>
+			<div class="first-sub-right2 hidden-hashtag col-sm-6 hidden-lg hidden-md no-gutter text-right">
+				<div class="wrapper-box">
+					<a class="hashtag-utama" href="#"><span class="hashtag">#ahok</span></a>
+				</div>
+				<div class="wrapper-box">
+					<a class="hashtag-utama" href="#"><span class="hashtag">#ahok</span></a>
+				</div>
+				<div class="wrapper-box">
+					<a class="hashtag-utama" href="#"><span class="hashtag">#ahok</span></a>
+				</div>
+			</div>
+			<!-- /hidden -->
+			<div id="first-sub-right" class="col-md-2 no-gutter hidden-sm">
+				<div class="wrapper-box">
+					<a class="hashtag-utama" href="#"><span class="hashtag">#ahok</span></a>
+				</div>
+				<div class="wrapper-box">
+					<a class="hashtag-utama" href="#"><span class="hashtag">#ahok</span></a>
+				</div>
+				<div class="wrapper-box">
+					<a class="hashtag-utama" href="#"><span class="hashtag">#ahok</span></a>
 				</div>
 			</div>
 		</div>
@@ -236,7 +260,7 @@
 	<div class="big-divider">
 		<span class="text-divider">Jual Beli</span>
 	</div>
-	<div class="row no-margin">
+	<div class="row hidden-sm no-margin">
 		<div class="col-sm-2 text-left no-gutter">
 			<span class="interaksi-side-text">Trending</span>
 		</div>
@@ -246,18 +270,18 @@
 	</div>
 	<div class="wrapper-center">
 		<div class="second-wrapper row no-margin">
-			<div id="second-sub-left" class="col-sm-2 no-gutter">
+			<div id="second-sub-left" class="col-md-2 hidden-sm no-gutter">
 				<div class="wrapper-box">
-					<span class="hashtag">#ahok</span>
+					<a class="hashtag-utama" href="#"><span class="hashtag">#ahok</span></a>
 				</div>
 				<div class="wrapper-box">
-					<span class="hashtag">#ahok</span>
+					<a class="hashtag-utama" href="#"><span class="hashtag">#ahok</span></a>
 				</div>
 				<div class="wrapper-box">
-					<span class="hashtag">#ahok</span>
+					<a class="hashtag-utama" href="#"><span class="hashtag">#ahok</span></a>
 				</div>
 			</div>
-			<div class="col-sm-8">
+			<div class="slider-nonext2 col-md-8 col-sm-12">
 				<div id="carouselInteraksi" class="carousel slide" data-ride="carousel">
 				 	<div class="carousel-inner">
 						<div class="item active">
@@ -281,15 +305,47 @@
 					</div>
 				</div>
 			</div>
-			<div id="second-sub-right" class="col-sm-2 no-gutter">
+			<!-- hidden -->
+			<div class="rekomen-hidden row hidden-md hidden-lg no-margin">
+				<div class="col-sm-2 text-left no-gutter">
+					<span class="interaksi-side-text">Trending</span>
+				</div>
+				<div class="col-sm-2 col-sm-offset-8 text-right no-gutter">
+					<span class="interaksi-side-text">Rekomen</span>
+				</div>
+			</div>
+			<div id="first-sub-left" class="hidden-hashtag col-sm-6 hidden-lg hidden-md no-gutter">
 				<div class="wrapper-box">
-					<span class="hashtag">#ahok</span>
+					<a class="hashtag-utama" href="#"><span class="hashtag">#ahok</span></a>
 				</div>
 				<div class="wrapper-box">
-					<span class="hashtag">#ahok</span>
+					<a class="hashtag-utama" href="#"><span class="hashtag">#ahok</span></a>
 				</div>
 				<div class="wrapper-box">
-					<span class="hashtag">#ahok</span>
+					<a class="hashtag-utama" href="#"><span class="hashtag">#ahok</span></a>
+				</div>
+			</div>
+			<div class="first-sub-right2 hidden-hashtag col-sm-6 hidden-lg hidden-md no-gutter text-right">
+				<div class="wrapper-box">
+					<a class="hashtag-utama" href="#"><span class="hashtag">#ahok</span></a>
+				</div>
+				<div class="wrapper-box">
+					<a class="hashtag-utama" href="#"><span class="hashtag">#ahok</span></a>
+				</div>
+				<div class="wrapper-box">
+					<a class="hashtag-utama" href="#"><span class="hashtag">#ahok</span></a>
+				</div>
+			</div>
+			<!-- /hidden -->
+			<div id="second-sub-right" class="col-md-2 hidden-sm no-gutter">
+				<div class="wrapper-box">
+					<a class="hashtag-utama" href="#"><span class="hashtag">#ahok</span></a>
+				</div>
+				<div class="wrapper-box">
+					<a class="hashtag-utama" href="#"><span class="hashtag">#ahok</span></a>
+				</div>
+				<div class="wrapper-box">
+					<a class="hashtag-utama" href="#"><span class="hashtag">#ahok</span></a>
 				</div>
 			</div>
 		</div>
