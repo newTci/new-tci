@@ -457,9 +457,12 @@ h1
 	-ms-transition: all .25s ease-out
 	-o-transition: all .25s ease-out
 	transition: all .25s ease-out
+	position relative
 	&:hover
 		transform translateY(-5px)
 		box-shadow 0 10px 15px -8px rgb(0,0,0,0.3)
+	&:disabled
+		cursor not-allowed
 // section detail-berita
 .judul-naskah
 	font-size $judul-naskah
@@ -605,9 +608,24 @@ h1
 		text-decoration none
 		color $hitam-dope
 		font-family $roboto
-// @keyframes {asd}
-// 	0%
-// 		display flex
+		
+.buffering
+	animation muter 5s inifnite
+	-webkit-animation muter 1.4s infinite linear
+	position absolute
+	left 50%;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	top 25%
+	visibility hidden
+
+@keyframes {muter}
+	from
+		transform rotate(0deg)
+	to
+		transform rotate(360deg)
 
 
 // media query 1200px / md
@@ -711,3 +729,4 @@ h1
 		padding 0
 	.rekomen-hidden
 		margin-bottom -10px
+		

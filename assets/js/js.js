@@ -50,8 +50,8 @@ $(document).ready(function() {
     $(window).scroll(function (event) {
 		if($(window).scrollTop() + $(window).height() == $(document).height()) {
 			//$(".left-side-banner").next("div").remove();
-			// $(".left-side-banner").next("div").addClass('ilang')
-			// $(".right-side-banner").next("div").addClass('ilang')
+			$(".left-side-banner").next("div").addClass('ilang')
+			$(".right-side-banner").next("div").addClass('ilang')
 			//$(".ilang").remove();
 		}else {
 		}
@@ -82,8 +82,8 @@ $(document).ready(function() {
 $('.konten-berita').each(function() {
     var text = $(this).text();
    	
-	if(text.length > 12) {
-	 	var trimmedString = text.substr(0, 20);
+	if(text.length > 14) {
+	 	var trimmedString = text.substr(0, 24);
     	trimmedString = trimmedString.substr(0, Math.min(trimmedString.length, trimmedString.lastIndexOf(" ")))
 		$(this).text(trimmedString + '...')
 		//$(this).text(text.substring(0, 18) + '..')

@@ -519,12 +519,16 @@ h1 {
   -ms-transition: all 0.25s ease-out;
   -o-transition: all 0.25s ease-out;
   transition: all 0.25s ease-out;
+  position: relative;
 }
 .more-berita-btn:hover {
   -webkit-transform: translateY(-5px);
   -ms-transform: translateY(-5px);
   transform: translateY(-5px);
   box-shadow: 0 10px 15px -8px #000;
+}
+.more-berita-btn:disabled {
+  cursor: not-allowed;
 }
 .judul-naskah {
   font-size: 26px;
@@ -754,6 +758,18 @@ h1 {
   color: #2c3e50;
   font-family: 'Roboto', sans-serif;
 }
+.buffering {
+  animation: muter 5s inifnite;
+  -webkit-animation: muter 1.4s infinite linear;
+  position: absolute;
+  left: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 25%;
+  visibility: hidden;
+}
 @media (max-width: 1200px) {
   .wrapper-box {
     height: 67px;
@@ -900,5 +916,41 @@ h1 {
   }
   .rekomen-hidden {
     margin-bottom: -10px;
+  }
+}
+@-moz-keyframes muter {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes muter {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-o-keyframes muter {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes muter {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
