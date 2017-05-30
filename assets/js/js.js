@@ -13,18 +13,7 @@ $(document).ready(function() {
 	});
 
 	var i = 0;
-	$(window).scroll(function (event) {
-		if($(window).scrollTop() + $(window).height() == $(document).height()) {
-			//$(".left-side-banner").next("div").remove();
-			$(".left-side-banner").next("div").addClass('ilang')
-			$(".right-side-banner").next("div").addClass('ilang')
-			//$(".ilang").remove();
-			$(".ilang").css({
-				visibility: 'hidden'
-			});
-		}else {
-		}
-	});
+	
 	//  owl carousel
  	// 	var owl = $('.owl-carousel');
 	// 	owl.owlCarousel({
@@ -57,8 +46,16 @@ $(document).ready(function() {
     var bannerKanan = (".right-side-banner")
 
     //console.log $(window).width()
-    $(".left-side-banner, .right-side-banner").stick_in_parent();
-
+    $(".left-side-banner, .right-side-banner").stick_in_parent("#utama");
+    $(window).scroll(function (event) {
+		if($(window).scrollTop() + $(window).height() == $(document).height()) {
+			//$(".left-side-banner").next("div").remove();
+			// $(".left-side-banner").next("div").addClass('ilang')
+			// $(".right-side-banner").next("div").addClass('ilang')
+			//$(".ilang").remove();
+		}else {
+		}
+	});
 
  	$(".ckbx").click(function(event) {
  		$(this).siblings("i").css({
@@ -93,18 +90,31 @@ $('.konten-berita').each(function() {
 	}
 });
 
-$(".konten-berita").hover(function() {
-	var text = $(this).data('judul')
+// $(".konten-berita").hover(function() {
+// 	var text = $(this).data('judul')
+// 	$(this).text(text);
+// }, function() {
+// 	var text = $(this).text();
+// 	var k = $(this)
+// 	var trimmedString = text.substr(0, 20);
+// 	trimmedString = trimmedString.substr(0, Math.min(trimmedString.length, trimmedString.lastIndexOf(" ")))
+// 	k.text(trimmedString + '...')
+// 	// setTimeout(function(){
+// 	// 	console.log($(this))
+// 	// 	k.text(trimmedString + '...')
+// 	// }, 200);
+	
+// });
+
+$(document).on("mouseenter", (".konten-berita"), function() {
+    var text = $(this).data('judul')
 	$(this).text(text);
-}, function() {
-	var text = $(this).text();
+});
+
+$(document).on("mouseleave", (".konten-berita"), function() {
+    var text = $(this).text();
 	var k = $(this)
 	var trimmedString = text.substr(0, 20);
 	trimmedString = trimmedString.substr(0, Math.min(trimmedString.length, trimmedString.lastIndexOf(" ")))
 	k.text(trimmedString + '...')
-	// setTimeout(function(){
-	// 	console.log($(this))
-	// 	k.text(trimmedString + '...')
-	// }, 200);
-	
 });

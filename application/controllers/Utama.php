@@ -33,9 +33,10 @@ class Utama extends CI_Controller {
 	public function more_berita()
 	{
 		$kategori = $this->input->post('kategori');
-		$data = array(
-			'username' => $kategori
-		);
+		$endpoint = $this->input->post('endpoint');
+		$this->load->model('berita');
+		$data = $this->berita->getJudulBeritaByKategoriAndLimit($kategori, 5, $endpoint);
+		header('Content-Type: application/json');
 		echo json_encode($data);
 	}
 

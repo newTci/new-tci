@@ -15,6 +15,18 @@ class Berita extends CI_Model {
             return $query->result();
         }
 
+        public function getJudulBeritaByKategoriAndLimit($kategori, $limit, $endpoint){
+            $query = $this->db
+                ->select("berita.id_berita, berita.judul, listkupasprofesi.nama_kupasprofesi")
+                ->from("berita")
+                ->join("listkupasprofesi", "berita.listkupasprofesi = listkupasprofesi.id_kupasprofesi")
+                ->where("listkupasprofesi.nama_kupasprofesi", $kategori)
+                ->order_by("berita.id_berita", 'DESC')
+                ->limit($limit, $endpoint)
+                ->get();
+            return $query->result();
+        }
+
         public function getBerita($jumlah){
             $query = $this->db->get('berita', $jumlah);
             return $query->result();

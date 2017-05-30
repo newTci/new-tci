@@ -16,6 +16,10 @@
 body
 	overflow-x hidden
 	overflow-y scroll
+.ilang
+	visibility hidden
+.dnone
+	display none
 	
 // variable
 
@@ -367,6 +371,7 @@ h1
 .paging-berita
 	font-size $font-divider - 6
 	color $hitam-dope
+
 	
 .divider-konten
 	height 25px
@@ -440,6 +445,21 @@ h1
 		margin-top: 0.2em;
 		/* bg color = bg color under block */
 		background: white;
+.more-berita-btn
+	font-family $Ubuntu
+	background-color tint($hitam-dope, 10%)
+	border none
+	color white
+	padding 5px 10px
+	box-shadow 0 10px 5px -10px rgb(0,0,0,0.3)
+	-webkit-transition: all .25s ease-out
+	-moz-transition: all .25s ease-out
+	-ms-transition: all .25s ease-out
+	-o-transition: all .25s ease-out
+	transition: all .25s ease-out
+	&:hover
+		transform translateY(-5px)
+		box-shadow 0 10px 15px -8px rgb(0,0,0,0.3)
 // section detail-berita
 .judul-naskah
 	font-size $judul-naskah

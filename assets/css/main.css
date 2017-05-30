@@ -28,6 +28,12 @@ body {
   overflow-x: hidden;
   overflow-y: scroll;
 }
+.ilang {
+  visibility: hidden;
+}
+.dnone {
+  display: none;
+}
 .rel {
   position: relative;
 }
@@ -500,6 +506,25 @@ h1 {
   margin-top: 0.2em;
 /* bg color = bg color under block */
   background: #fff;
+}
+.more-berita-btn {
+  font-family: $Ubuntu;
+  background-color: #415161;
+  border: none;
+  color: #fff;
+  padding: 5px 10px;
+  box-shadow: 0 10px 5px -10px #000;
+  -webkit-transition: all 0.25s ease-out;
+  -moz-transition: all 0.25s ease-out;
+  -ms-transition: all 0.25s ease-out;
+  -o-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+}
+.more-berita-btn:hover {
+  -webkit-transform: translateY(-5px);
+  -ms-transform: translateY(-5px);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px -8px #000;
 }
 .judul-naskah {
   font-size: 26px;
