@@ -20,10 +20,22 @@
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
 }
 body {
   overflow-x: hidden;
   overflow-y: scroll;
+}
+.ilang {
+  visibility: hidden;
+}
+.dnone {
+  display: none;
+}
+.rel {
+  position: relative;
 }
 #utama {
   margin-bottom: 275px;
@@ -146,9 +158,11 @@ h1 {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
+.wrapper-center .col-sm-12,
 .wrapper-center .col-sm-8 {
   position: relative;
 }
+.wrapper-center .col-sm-12 span,
 .wrapper-center .col-sm-8 span {
   position: absolute;
   bottom: 0;
@@ -383,18 +397,30 @@ h1 {
   text-transform: uppercase;
   margin: 0 0 25px;
 }
+.abs-icon {
+  position: absolute;
+  top: 7px;
+  left: 0;
+}
 .konten-berita {
+  padding-left: 15px;
   display: block;
   font-size: 20px;
   text-decoration: none;
   color: #2c3e50;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
 }
 .konten-berita:hover {
   text-decoration: none;
-  color: #2c3e50;
-  -webkit-transform: scale();
-  -ms-transform: scale();
-  transform: scale();
+  color: #f66;
+}
+.konten-berita:focus {
+  color: #f66;
+  text-decoration: none;
 }
 .paging-berita {
   font-size: 14px;
@@ -480,6 +506,29 @@ h1 {
   margin-top: 0.2em;
 /* bg color = bg color under block */
   background: #fff;
+}
+.more-berita-btn {
+  font-family: $Ubuntu;
+  background-color: #415161;
+  border: none;
+  color: #fff;
+  padding: 5px 10px;
+  box-shadow: 0 10px 5px -10px #000;
+  -webkit-transition: all 0.25s ease-out;
+  -moz-transition: all 0.25s ease-out;
+  -ms-transition: all 0.25s ease-out;
+  -o-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+  position: relative;
+}
+.more-berita-btn:hover {
+  -webkit-transform: translateY(-5px);
+  -ms-transform: translateY(-5px);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px -8px #000;
+}
+.more-berita-btn:disabled {
+  cursor: not-allowed;
 }
 .judul-naskah {
   font-size: 26px;
@@ -709,6 +758,18 @@ h1 {
   color: #2c3e50;
   font-family: 'Roboto', sans-serif;
 }
+.buffering {
+  animation: muter 5s inifnite;
+  -webkit-animation: muter 1.4s infinite linear;
+  position: absolute;
+  left: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 25%;
+  visibility: hidden;
+}
 @media (max-width: 1200px) {
   .wrapper-box {
     height: 67px;
@@ -790,7 +851,7 @@ h1 {
     margin-left: 620px;
   }
   #menu-berita {
-    margin-bottom: -25px;
+    margin-bottom: 0;
   }
   .thumbnail-4-text {
     bottom: 40px;
@@ -808,5 +869,88 @@ h1 {
   .btn-post:before {
     right: 85px;
     bottom: 20px;
+  }
+  .hidden-hashtag {
+    margin-top: 15px;
+  }
+  .flex-row {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .flex-row .wrapper-thumbnail-4 {
+    width: 49%;
+    margin-bottom: 10px;
+    height: auto;
+  }
+  .wrapper-box {
+    width: 98%;
+  }
+  .first-sub-right2 {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-align-content: flex-end;
+    -ms-flex-line-pack: end;
+    align-content: flex-end;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-left: 5px;
+  }
+  .first-sub-right2 .wrapper-box {
+    width: 100%;
+  }
+  .slider-nonext {
+    padding: 0;
+  }
+  .interaksi-sub-menu {
+    margin-bottom: 5px;
+  }
+  .slider-nonext2 {
+    margin-bottom: 10px;
+    padding: 0;
+  }
+  .rekomen-hidden {
+    margin-bottom: -10px;
+  }
+}
+@-moz-keyframes muter {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes muter {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-o-keyframes muter {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes muter {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }

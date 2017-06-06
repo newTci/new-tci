@@ -12,9 +12,14 @@
 	display flex
 	flex-direction row
 	justify-content space-between
+	flex-wrap nowrap
 body
 	overflow-x hidden
 	overflow-y scroll
+.ilang
+	visibility hidden
+.dnone
+	display none
 	
 // variable
 
@@ -30,6 +35,9 @@ $font-slider = 38px
 $judul-naskah = 26px
 $title-berita = 22px
 // /variable
+
+.rel
+	position relative
 
 #utama
 	margin-bottom 275px
@@ -136,7 +144,7 @@ h1
 			display flex
 			flex-direction column
 			flex-wrap wrap
-	.col-sm-8
+	.col-sm-12, .col-sm-8
 		position relative
 		span
 			position absolute
@@ -339,18 +347,31 @@ h1
 	text-transform uppercase
 	margin 0 0 25px
 	
+.abs-icon
+	position absolute
+	top 7px
+	left 0
 .konten-berita
+	padding-left 15px
 	display block
 	font-size $font-divider
 	text-decoration none
 	color $hitam-dope
+	-webkit-transition: all .25s ease
+	-moz-transition: all .25s ease
+	-ms-transition: all .25s ease
+	-o-transition: all .25s ease
+	transition: all .25s ease
 	&:hover
 		text-decoration none
-		color $hitam-dope
-		transform scale()
+		color tint(red, 40%)
+	&:focus
+		color tint(red, 40%)
+		text-decoration none
 .paging-berita
 	font-size $font-divider - 6
 	color $hitam-dope
+
 	
 .divider-konten
 	height 25px
@@ -424,6 +445,24 @@ h1
 		margin-top: 0.2em;
 		/* bg color = bg color under block */
 		background: white;
+.more-berita-btn
+	font-family $Ubuntu
+	background-color tint($hitam-dope, 10%)
+	border none
+	color white
+	padding 5px 10px
+	box-shadow 0 10px 5px -10px rgb(0,0,0,0.3)
+	-webkit-transition: all .25s ease-out
+	-moz-transition: all .25s ease-out
+	-ms-transition: all .25s ease-out
+	-o-transition: all .25s ease-out
+	transition: all .25s ease-out
+	position relative
+	&:hover
+		transform translateY(-5px)
+		box-shadow 0 10px 15px -8px rgb(0,0,0,0.3)
+	&:disabled
+		cursor not-allowed
 // section detail-berita
 .judul-naskah
 	font-size $judul-naskah
@@ -569,9 +608,24 @@ h1
 		text-decoration none
 		color $hitam-dope
 		font-family $roboto
-// @keyframes {asd}
-// 	0%
-// 		display flex
+		
+.buffering
+	animation muter 5s inifnite
+	-webkit-animation muter 1.4s infinite linear
+	position absolute
+	left 50%;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	top 25%
+	visibility hidden
+
+@keyframes {muter}
+	from
+		transform rotate(0deg)
+	to
+		transform rotate(360deg)
 
 
 // media query 1200px / md
@@ -635,7 +689,7 @@ h1
 		width 90px
 		margin-left 620px
 	#menu-berita
-		margin-bottom -25px
+		margin-bottom 0
 	.thumbnail-4-text
 		bottom 40px
 	.wrapper-thumbnail-3
@@ -648,3 +702,31 @@ h1
 		&:before
 			right 85px
 			bottom 20px
+	.hidden-hashtag
+		margin-top 15px
+	.flex-row
+		flex-wrap wrap
+		.wrapper-thumbnail-4
+			width 49%
+			margin-bottom 10px
+			height auto
+	.wrapper-box
+		width 98%
+	.first-sub-right2
+		display flex
+		flex-direction row
+		align-content flex-end
+		flex-wrap wrap
+		padding-left 5px
+		.wrapper-box
+			width 100%
+	.slider-nonext
+		padding 0
+	.interaksi-sub-menu
+		margin-bottom 5px
+	.slider-nonext2
+		margin-bottom 10px
+		padding 0
+	.rekomen-hidden
+		margin-bottom -10px
+		
